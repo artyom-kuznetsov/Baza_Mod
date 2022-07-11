@@ -6,7 +6,7 @@ state={
 	
 	state_category = town
 	resources={
-		tungsten = 120 
+		tungsten = 600 
 	}
 	history={
 		add_core_of = BRM
