@@ -2677,10 +2677,6 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_ussr_war_goal }
 		available = {
 			is_subject = no
-			has_game_rule = {
-				rule = RULE_ALLOW_HIST_RULES
-				option = BLOCKED
-				}
 			has_government = fascism
 			has_war = no
 			SOV = {
@@ -2862,10 +2858,6 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_japan_friend }
 		available = {
 			is_subject = no
-			has_game_rule = {
-				rule = RULE_ALLOW_HIST_RULES
-				option = BLOCKED
-				}
 			AND = {
 				country_exists = CHI
 				CHI = { is_subject = no }
@@ -2969,10 +2961,6 @@ focus_tree = {
 			has_army_manpower = { size > 849999 } #ca 90 div
 			SOU = {
 				has_government = communism
-				has_game_rule = {
-					rule = RULE_ALLOW_HIST_RULES
-					option = BLOCKED
-					}
 			}
 		}
 		x = 0
@@ -3759,11 +3747,6 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_demand_sudetenland }
 		available = { 
 			has_army_manpower = { size > 749999 }
-			has_game_rule = {
-				rule = RULE_ALLOW_HIST_RULES
-				option = BLOCKED
-				}
-			AND = 
 			NOT = { has_war_with = CZE }
 			CZE = {
 				custom_trigger_tooltip = {
@@ -4406,10 +4389,6 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_danzig_or_war }
 		available = {
 			is_subject = no
-			has_game_rule = {
-				rule = RULE_ALLOW_HIST_RULES
-				option = BLOCKED
-				}
 			OR = {
 				SLO = {
 					exists = yes
@@ -5078,10 +5057,6 @@ focus_tree = {
 
 		available = {
 			has_government = fascism
-			has_game_rule = {
-				rule = RULE_ALLOW_HIST_RULES
-				option = BLOCKED
-				}
 			country_exists = DEN
 			NOT = {
 				has_war_with = DEN
@@ -5398,10 +5373,6 @@ focus_tree = {
 		icon = GFX_goal_generic_political_pressure
 		available = {
 			is_subject = no
-			has_game_rule = {
-				rule = RULE_ALLOW_HIST_RULES
-				option = BLOCKED
-				}
 			controls_state = 4
 			controls_state = 152
 			has_army_manpower = { size > 749999 } #ca 80 div
@@ -5962,11 +5933,6 @@ focus_tree = {
 		available = {
 			is_subject = no
 			has_government = fascism
-			
-			has_game_rule = {
-				rule = RULE_ALLOW_HIST_RULES
-				option = BLOCKED
-			}
 		}
 		x = 47
 		y = 0

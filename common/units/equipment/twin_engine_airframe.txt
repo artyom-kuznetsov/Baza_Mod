@@ -156,7 +156,7 @@ equipments = {
 
 		archetype = tac_bomber_equipment
 		priority = 105
-		
+		is_convertable = yes
 		air_range = 1400
 		maximum_speed = 250
 		air_agility = 16
@@ -178,7 +178,10 @@ equipments = {
 		archetype = tac_bomber_equipment
 		parent = tac_bomber_equipment_0
 		priority = 110
-		
+		is_convertable = yes
+		can_convert_from = {
+			tac_bomber_equipment_0
+		}
 		air_range = 2400
 		maximum_speed = 430
 		air_agility =20
@@ -204,7 +207,11 @@ equipments = {
 		archetype = tac_bomber_equipment
 		parent = tac_bomber_equipment_1
 		priority = 110
-		
+		can_convert_from = {
+			tac_bomber_equipment_0
+			tac_bomber_equipment_1
+		}
+		is_convertable = yes
 		air_range = 2500
 		maximum_speed = 440
 		air_agility =25
@@ -230,7 +237,11 @@ equipments = {
 		archetype = tac_bomber_equipment
 		parent = tac_bomber_equipment_2
 		priority = 110
-		
+		can_convert_from = {
+			tac_bomber_equipment_0
+			tac_bomber_equipment_1
+			tac_bomber_equipment_2
+		}
 		air_range = 3000
 		maximum_speed = 480
 		air_agility = 30
@@ -252,7 +263,7 @@ equipments = {
 	# Basic Jet tac_bomber
 	jet_tac_bomber_equipment_1 = {
 		year = 1945
-
+		is_convertable = yes
 		archetype = jet_tac_bomber_equipment
 		priority = 120
 		
@@ -270,11 +281,13 @@ equipments = {
 	# Improved Jet tac_bomber
 	jet_tac_bomber_equipment_2 = {
 		year = 1950
-
+		is_convertable = yes
 		archetype = jet_tac_bomber_equipment
 		parent = jet_tac_bomber_equipment_1
 		priority = 120
-		
+		can_convert_from = {
+			jet_tac_bomber_equipment_1
+		}
 		air_range = 5000
 		maximum_speed = 1000
 		air_agility = 57
@@ -298,7 +311,7 @@ equipments = {
 
 		archetype = heavy_fighter_equipment
 		priority = 100
-		
+		is_convertable = yes
 		air_range = 1300
 		maximum_speed = 500
 		air_agility = 25
@@ -316,7 +329,10 @@ equipments = {
 		archetype = heavy_fighter_equipment
 		parent = heavy_fighter_equipment_1
 		priority = 100
-		
+		is_convertable = yes
+		can_convert_from = {
+			heavy_fighter_equipment_1
+		}
 		air_range = 1700
 		maximum_speed = 550
 		air_agility = 30
@@ -339,7 +355,10 @@ equipments = {
 		archetype = heavy_fighter_equipment
 		parent = heavy_fighter_equipment_2
 		priority = 100
-		
+		can_convert_from = {
+			heavy_fighter_equipment_1
+			heavy_fighter_equipment_2
+		}
 		air_range = 2000
 		maximum_speed = 600
 		air_agility = 33
@@ -368,7 +387,7 @@ equipments = {
 		group_by = archetype
 		sprite = scout_plane
 		air_map_icon_frame = 13
-		
+		is_convertable = yes
 		interface_category = interface_category_air
 		
 		# scout_plane
@@ -398,10 +417,10 @@ equipments = {
 
 	scout_plane_equipment_1 = {
 		year = 1936
-
+		is_convertable = yes
 		archetype = scout_plane_equipment
 		priority = 100
-		
+		is_convertable = yes
 		air_range = 1300
 		maximum_speed = 500
 		air_agility = 25
@@ -415,7 +434,9 @@ equipments = {
 	
 	scout_plane_equipment_2 = {
 		year = 1940
-
+		can_convert_from = {
+			scout_plane_equipment_1
+		}
 		archetype = scout_plane_equipment
 		parent = scout_plane_equipment_1
 		priority = 100
