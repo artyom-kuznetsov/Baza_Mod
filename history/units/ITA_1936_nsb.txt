@@ -494,7 +494,7 @@ air_wings = {
 	} 
 
 	# 3a Squadra Aerea - SQA3 (Rome)
-	2 = { 
+	158 = { 
 		# 5a Divisione Aerea 'Eolo'
 		tac_bomber_equipment_0 = { 
 			amount = 64 
@@ -508,7 +508,7 @@ air_wings = {
 	} 
 
 	# 2a Squadra Aerea - SQA2 (Palermo)
-	115 = { 
+	158 = { 
 		# 1a Divisione Aerea 'Aquila'
 		fighter_equipment_0 = { 
 			amount = 80 
@@ -522,7 +522,7 @@ air_wings = {
 	} 
 
 	# 4a Squadra Aerea - SQA4 (Bari)
-	156 = { 
+	158 = { 
 		# 9a Divisione Aerea 'Leone'
 		nav_bomber_equipment_1 = { 
 			amount = 48 
@@ -531,7 +531,7 @@ air_wings = {
 	} 
 
 	# Aeronautica della Sardegna - ASAR (Cagliari)
-	114 = { 
+	158 = { 
 		# 10a Brigata Aerea 'Marte'
 		nav_bomber_equipment_1 = { 
 			amount = 24 
@@ -541,7 +541,7 @@ air_wings = {
 
 	### AFRICA ###
 	# Aeronautica della Libia (Tripoli)
-	448 = { 
+	158 = { 
 		# 14a Brigata Aerea 'Rex'
 		fighter_equipment_0 = { 
 			amount = 20 
@@ -555,7 +555,7 @@ air_wings = {
 	} 
 
 	# Aeronautica dell'Africa Orientale (Eritrea)
-	550 = { 
+	158 = { 
 		fighter_equipment_0 = { 
 			amount = 40 
 			owner = "ITA" 

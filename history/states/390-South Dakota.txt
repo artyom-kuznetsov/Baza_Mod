@@ -15,7 +15,12 @@ state={
 		victory_points = {
 			1747 1 
 		}
-
+		1936.1.1.13 = {
+			buildings = {
+				industrial_complex = 3
+			}
+			add_extra_state_shared_building_slots = 2
+		}
 	}
 
 	provinces={

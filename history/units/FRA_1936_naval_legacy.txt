@@ -272,7 +272,7 @@ instant_effect = {
 			version_name = "Redoutable Class"
 		}
 		requested_factories = 1
-		progress = 0.90
+		progress = 0.99
 		amount = 4
 	}
 	add_equipment_production = {
@@ -282,7 +282,7 @@ instant_effect = {
 			version_name = "Redoutable Class"
 		}
 		requested_factories = 1
-		progress = 0.85
+		progress = 0.99
 		amount = 3
 	}
 	# SS: Minerve class (x4) ("Iris" "Minerve" "Vénus" "Junon")
@@ -292,7 +292,7 @@ instant_effect = {
 			creator = "FRA" 
 		}
 		requested_factories = 1
-		progress = 0.70
+		progress = 0.99
 		amount = 4
 	}
 	# DD: Le Fantasque class (x4) ("Le Malin" "L'Indomptable" "Le Fantasque" "Le Triomphant")
@@ -302,7 +302,7 @@ instant_effect = {
 			creator = "FRA" 
 		}
 		requested_factories = 1
-		progress = 0.70
+		progress = 0.99
 		amount = 4
 	}
 	# BC: Dunkerque (Comm. 16-Apr, 1937)	# REVISIT -- class vs. ship type vs. starting techs inconsistent
@@ -312,7 +312,7 @@ instant_effect = {
 			creator = "FRA" 
 		}
 		requested_factories = 1
-		progress = 0.20
+		progress = 0.99
 		amount = 1
 	}
 	 # CL: La Galissonnière class (x4) ("Jean de Vienne" "Marseillaise" "Gloire" "Montcalm") ("Georges Leygues" launched 24-Mar 1936)
@@ -322,7 +322,7 @@ instant_effect = {
 			creator = "FRA" 
 		}
 		requested_factories = 1
-		progress = 0.35
+		progress = 0.99
 		amount = 2
 	}
 	add_equipment_production = {
@@ -331,7 +331,7 @@ instant_effect = {
 			creator = "FRA" 
 		}
 		requested_factories = 1
-		progress = 0.20
+		progress = 0.99
 		amount = 1
 	}
 	add_equipment_production = {
@@ -340,7 +340,7 @@ instant_effect = {
 			creator = "FRA" 
 		}
 		requested_factories = 1
-		progress = 0.15
+		progress = 0.99
 		amount = 1
 	}
 }

@@ -94,8 +94,6 @@ if = {
 		has_dlc = "Man the Guns"
 	}
 	set_technology = {
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
 		early_ship_hull_light = 1
 		basic_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
@@ -444,7 +442,6 @@ recruit_character = GER_martin_bormann
 recruit_character = GER_wilhelm_canaris
 recruit_character = GER_joseph_goebbels
 recruit_character = GER_konstantin_von_neurath
-recruit_character = GER_alfred_hugenberg
 recruit_character = GER_kurt_schumacher
 recruit_character = GER_wilhelm_ii
 recruit_character = GER_wilhelm_iii
@@ -636,7 +633,6 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_1
 			fixed_ship_torpedo_slot = ship_torpedo_1
-			rear_1_custom_slot = ship_mine_layer_1
 		}
 		obsolete = yes
 	}
@@ -653,7 +649,6 @@ if = {
 			fixed_ship_engine_slot = light_ship_engine_2
 			fixed_ship_torpedo_slot = ship_torpedo_1
 			mid_1_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = ship_mine_layer_1
 		}
 		obsolete = yes
 	}
@@ -710,7 +705,6 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 			mid_1_custom_slot = ship_torpedo_1
 			mid_2_custom_slot = ship_light_medium_battery_1
-			rear_1_custom_slot = ship_mine_layer_1
 		}
 		obsolete = yes
 	}
@@ -744,8 +738,6 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
 			mid_1_custom_slot = ship_anti_air_1
-			mid_2_custom_slot = ship_mine_layer_1
-			rear_1_custom_slot = ship_mine_layer_1
 		}
 		obsolete = yes
 	}
@@ -1058,4 +1050,20 @@ create_equipment_variant = {
 	#	}
 	#	obsolete = yes
 	#}
+}
+1936.1.1.13 = {
+
+	set_global_flag = GER_PreGrind
+	
+	add_ideas = {
+		no_vol	
+	}
+	
+	retire_character = GER_erich_von_manstein
+	retire_character = GER_heinz_guderian
+	retire_character = GER_wilhelm_list
+	recruit_character = HMM_erich_von_manstein	
+	recruit_character = HMM_heinz_guderian
+	recruit_character = HMM_wilhelm_list
+
 }

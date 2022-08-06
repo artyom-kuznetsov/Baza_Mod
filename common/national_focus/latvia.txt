@@ -77,6 +77,10 @@ focus_tree = {
 			factor = 1
 		}
 
+		allow_branch = {
+			date > 1966.5.1
+		}
+		
 		available = {
 		}
 

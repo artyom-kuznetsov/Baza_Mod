@@ -34,10 +34,10 @@ units= {
 	### Baltic Fleet -- Leningrad
 	fleet = {
 		name = "Baltiyskiy Flot"
-		naval_base = 3151 # Leningrad
+		naval_base = 3134 # 3151 # Leningrad
 		task_force = {				
 			name = "Baltiyskiy Flot"
-			location = 3151 # Leningrad
+			location = 3134 # = 3151 # Leningrad
 			ship = { name = "Marat" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SOV version_name = "Marat Class" } } }
 			ship = { name = "Oktyabrskaya Revolutsiya" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SOV version_name = "Marat Class" } } }
 			ship = { name = "Marti" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOV version_name = "Marti Class" } } }
@@ -55,7 +55,7 @@ units= {
 		}	
 		task_force = {	
 			name = "Baltiyskiy Podvodniy Flot"
-			location = 3151 # Leningrad
+			location = 3134 # = 3151 # Leningrad
 			ship = { name = "B-2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series I Debakrist" } } }			
 			ship = { name = "L-55" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series I Debakrist" } } }			
 			# 1iy Podvodniy Flot
@@ -128,17 +128,17 @@ units= {
 	### Pacific Fleet -- Vladivostok
 	fleet = {
 		name = "Tikhookeanskiy Flot"
-		naval_base = 957 # Vladivostok
+		naval_base = 3134 # 957 # Vladivostok
 		task_force = {				
 			name = "Tikhookeanskiy Flot"
-			location = 957 # Vladivostok
+			location = 3134 # = 957 # Vladivostok
 			# 8ya Flotiliya Esmintsev
 			ship = { name = "Uritskiy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Orfey Class" } } }
 			ship = { name = "Stalin" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Orfey Class" } } }
 		}	
 		task_force = {	
 			name = "Tihookyeanskiy Podvodniy Flot"
-			location = 957 # Vladivostok
+			location = 3134 # = 957 # Vladivostok
 			# 10iy Podvodniy Flot
 			ship = { name = "Shch-101" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series V Shchuka" } } }			
 			ship = { name = "Shch-102" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series V Shchuka" } } }			
@@ -177,7 +177,7 @@ instant_effect = {
 			version_name = "Leningrad & Minsk Class"
 		}
 		requested_factories = 1
-		progress = 0.70
+		progress = 0.99
 		amount = 2
 	}
 	add_equipment_production = {
@@ -187,7 +187,7 @@ instant_effect = {
 			version_name = "Leningrad & Minsk Class"
 		}
 		requested_factories = 1
-		progress = 0.60
+		progress = 0.99
 		amount = 2
 	}
 	#CA Kirov Class (Kirov)
@@ -198,7 +198,7 @@ instant_effect = {
 			version_name = "Kirov Class"
 		}
 		requested_factories = 1
-		progress = 0.10
+		progress = 0.99
 		amount = 1
 	}
 	#CA Kirov Class (Voroshilov)
@@ -209,7 +209,7 @@ instant_effect = {
 			version_name = "Kirov Class"
 		}
 		requested_factories = 1
-		progress = 0.10
+		progress = 0.99
 		amount = 1
 	}
 	# SS: Shchuka class (x29) ("Shch-125" "Shch-205" "Shch-206" "Shch-207" "Shch-310" "Shch-311" "Shch-126" "Shch-127" "Shch-128" "Shch-129" "Shch-130" "Shch-131" "Shch-132" "Shch-133" 
@@ -222,7 +222,7 @@ instant_effect = {
 			version_name = "Series V Shchuka"
 		}
 		requested_factories = 1
-		progress = 0.80
+		progress = 0.99
 		amount = 6
 	}
 	add_equipment_production = {
@@ -232,7 +232,7 @@ instant_effect = {
 			version_name = "Series X Shchuka"
 		}
 		requested_factories = 1
-		progress = 0.80
+		progress = 0.99
 		amount = 12
 	}
 	add_equipment_production = {
@@ -242,7 +242,7 @@ instant_effect = {
 			version_name = "Series X Shchuka"
 		}
 		requested_factories = 1
-		progress = 0.80
+		progress = 0.99
 		amount = 12
 	}
 	add_equipment_production = {
@@ -252,7 +252,7 @@ instant_effect = {
 			version_name = "Series IX Srednyaya"
 		}
 		requested_factories = 1
-		progress = 0.70
+		progress = 0.99
 		amount = 5
 	}
 }

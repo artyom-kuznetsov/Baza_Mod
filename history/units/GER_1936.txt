@@ -390,7 +390,7 @@ units = {
 ### Air oob
 air_wings = {
 	### I. Luftkreiskommando -- Konigsberg ###
-	763 = { 
+	58 = { 
 		# Jagdgeschwader 232 	
 		fighter_equipment_0 =  {		# He 51
 			owner = "GER" 
@@ -400,7 +400,7 @@ air_wings = {
 	}
 
 	### II. Luftkreiskommando -- Berlin ###
-	64 = { 
+	58 = { 
 		# Jagdgeschwader 132 'Richtofen'		
 		fighter_equipment_0 =  {		# Ar 68
 			owner = "GER" 
@@ -433,7 +433,7 @@ air_wings = {
 	}
 
 	### III. Luftkreiskommando -- Breslau ###
-	66 = { 
+	58 = { 
 		# Kampfgeschwader 253 'General Wever'		
 		tac_bomber_equipment_0 = {		# He 45 or Do 23 ?
 			owner = "GER" 
@@ -449,7 +449,7 @@ air_wings = {
 	}
 
 	### IV. Luftkreiskommando -- Kassel ###
-	57 = { 
+	58 = { 
 		# Jagdgeschwader 134 'Horst Wessel'		
 		fighter_equipment_0 =  {		# He 51 # Ar 68
 			owner = "GER" 
@@ -471,7 +471,7 @@ air_wings = {
 	}
 
 	### V. Luftkreiskommando -- Munich ###
-	52 = { 
+	58 = { 
 		# Jagdgeschwader 136		
 		fighter_equipment_0 =  {		# He 51
 			owner = "GER" 

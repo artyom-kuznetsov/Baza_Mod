@@ -27,12 +27,12 @@ upgrades = {
 
 		resource_cost_thresholds = {
 			10 = { #higher level engines do require more strategic resources
-				#chromium = 1
+				chromium = 1
 			}
 		}
 
 		maximum_speed = 0.1
-		reliability = -0.015
+		reliability = -0.02
 		add_stats = {
 			fuel_consumption = 0.05
 			build_cost_ic = 0.1
@@ -65,29 +65,22 @@ upgrades = {
 		}
 
 		resource_cost_thresholds = { # resource values defined here are TOTAL added cost, not cumulative
-			4 = { #more armor requires more resources
-				steel = 1
+			5 = { #more armor requires more resources
+				steel = 1 
 			}
-			6 = { #more armor requires more resources
-				steel = 2
-			}
-			9 = {
+			10 = {
 				steel = 2
 				chromium = 1
 			}
-			12 = {
+			15 = {
 				steel = 2
 				chromium = 2
-			}
-			16 = {
-				steel = 2
-				chromium = 3
 			}
 		}
 
 		maximum_speed = -0.05
-		reliability = -0.015
-		armor_value = 0.085
+		reliability = -0.02
+		armor_value = 0.075
 		add_stats = {
 			breakthrough = 1.25
 			build_cost_ic = 0.2

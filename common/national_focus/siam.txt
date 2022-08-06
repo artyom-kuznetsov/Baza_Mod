@@ -1,0 +1,3059 @@
+focus_tree = {
+	id = siam01
+	country = {
+		factor = 0
+		modifier = {
+			add = 300
+			tag = SIA
+		}
+	}
+
+	continuous_focus_position = { x = 2750 y = 700 }
+	
+	#Focus for National Bank
+	focus = {
+		id = SIA_nationalbank
+		icon = GFX_SIA_nationalbank
+		x = 0
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SIA_freedomfiscalsovereignty }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_idea = SIA_Inflation_Problems
+		}
+		completion_reward = {
+			custom_effect_tooltip = SIA_recovering_inflation_problems
+			swap_ideas = {
+				remove_idea = SIA_Inflation_Problems
+				add_idea = SIA_Inflation_Problems_2
+			}
+		}
+	}
+	
+	#Focus for Monetary Policy
+	focus = {
+		id = SIA_monetarypolicy
+		icon = GFX_SIA_monetarypolicy
+		x = 1
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SIA_freedomfiscalsovereignty }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	#Focus for Reform National Bank
+	focus = {
+		id = SIA_nationalbanknote
+		icon = GFX_goal_generic_neutrality_focus
+		x = 0
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SIA_nationalbank }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = {
+				limit = { has_idea = SIA_Inflation_Problems }
+				remove_ideas = SIA_Inflation_Problems
+			}
+			if = {
+				limit = { has_idea = SIA_Inflation_Problems_2 }
+				remove_ideas = SIA_Inflation_Problems_2
+			}
+		}
+	}
+	
+
+	
+	
+	#######    Diplomatic    #######
+	
+	#Focus for Diplomatic Adjustment
+	focus = {
+		id = SIA_diplomaticadjustment
+		icon = GFX_focus_generic_self_management
+		x = 0
+		y = 0
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = SIA_bowringtreatyoffer
+		icon = GFX_SIA_bowringtreatyoffer
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		prerequisite = { 
+			focus = SIA_extraterritorialrightundertreaty
+		}
+		
+		available = {
+
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			remove_ideas = SIA_Bowring_Treaty_1925_2
+		}
+		
+		x = 1
+		y = 2
+	}
+	
+	focus = {
+		id = SIA_freedomfiscalsovereignty
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 5
+		prerequisite = { 
+			focus = SIA_bowringtreatyoffer 
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		x = 1
+		y = 3
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = SIA_extraterritorialrightundertreaty
+		icon = GFX_SIA_extraterritorialrightundertreaty
+		cost = 5
+		prerequisite = { focus = SIA_diplomaticadjustment }
+		prerequisite = { focus = SIA_improve_our_roads }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			NOT = { has_war_with = ENG }
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SIA_Bowring_Treaty_1925
+				add_idea = SIA_Bowring_Treaty_1925_2
+			}
+		}
+	}
+	
+	#Focus for Export Rice
+	focus = {
+		id = SIA_exportrice
+		icon = GFX_SIA_exportrice
+		x = 2
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SIA_freedomfiscalsovereignty }
+		prerequisite = { focus = SIA_dig_for_tungsten }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+		completion_reward = {
+			add_ideas = SIA_Rice_Exporting
+		}
+	}
+	
+	#######    Political    #######
+	
+	#######    Fascist Plaek    #######
+
+# Industry
+
+	focus = {
+		id = SIA_mitigation_depression
+		icon = GFX_focus_POL_warsaw_main_station
+		relative_position_id = SIA_improve_our_roads
+		prerequisite = {
+			focus = SIA_improve_our_roads
+		}
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SIA_Economic_Depression
+				add_idea = SIA_Economic_Depression_1
+			}
+		}
+	}
+
+	focus = {
+		id = SIA_mechanization_of_agriculture
+		icon = GFX_goal_generic_production2
+		cost = 5
+		prerequisite = {
+			focus = SIA_improve_our_roads
+		}
+		x = -3
+		y = 1
+		relative_position_id = SIA_improve_our_roads
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+						}
+				}
+				search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	}
+
+	focus = {
+		id = SIA_develop_rubber_extraction
+		icon = GFX_focus_generic_rubber
+		cost = 5
+		prerequisite = {
+			focus = SIA_mechanization_of_agriculture
+		}
+		x = -1
+		y = 1
+	
+		available = {
+			724 = {
+			   is_owned_and_controlled_by = ROOT
+			}
+	    }		
+		
+		relative_position_id = SIA_mechanization_of_agriculture
+		completion_reward = {
+
+			724 = {
+				add_resource = {
+					type = rubber
+					amount = 22
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RUBBER}
+	}
+
+	focus = {
+		id = SIA_dig_for_tungsten
+		icon = GFX_focus_generic_tungsten
+		cost = 5
+		prerequisite = {
+			focus = SIA_develop_rubber_extraction
+		}
+		x = 0
+		y = 1
+		relative_position_id = SIA_develop_rubber_extraction
+
+		available = {
+			 289 = {
+				is_owned_and_controlled_by = ROOT
+			 }
+		}
+
+		completion_reward = {
+			289 = {
+				add_resource = {
+					type = tungsten
+					amount = 18
+				}
+			}
+			add_tech_bonus = {
+				name = excavation_tech_bonus_name
+				bonus = 1
+				uses = 1
+				category = excavation_tech
+			}			
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_TUNGSTEN}
+	}
+
+	focus = {
+		id = SIA_improve_our_roads
+		icon = GFX_goal_generic_construction
+		cost = 5
+		x = 7
+		y = 0
+			completion_reward = {
+					289 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+					724 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+				search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	}
+
+	focus = {
+		id = SIA_begin_industrialisation_plans
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10
+		prerequisite = {
+			focus = SIA_mitigation_depression
+		}
+		x = -1
+		y = 1
+		relative_position_id = SIA_mitigation_depression
+			completion_reward = {
+					add_tech_bonus = {
+							name = industrial_bonus
+							bonus = 1
+							uses = 2
+							category = industry
+						}
+				}
+				search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+
+	focus = {
+		id = SIA_electrification_effort
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5
+		prerequisite = {
+			focus = SIA_mechanization_of_agriculture
+		}
+		x = 1
+		y = 1
+		relative_position_id = SIA_mechanization_of_agriculture
+			completion_reward = {
+					random_owned_controlled_state = {
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+					}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+						}
+				}
+				search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	}
+
+	focus = {
+		id = SIA_cement_sector_improvement
+		icon = GFX_goal_generic_construction
+		cost = 10
+		prerequisite = {
+			focus = SIA_mitigation_depression
+		}
+		x = 1
+		y = 1
+		relative_position_id = SIA_mitigation_depression
+			completion_reward = {
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+								include_locked = yes
+							}
+							OR = {
+								is_in_home_area = yes
+								NOT = {
+									owner = {
+										any_owned_state = {
+											free_building_slots = {
+												building = industrial_complex
+												size > 0
+												include_locked = yes
+											}
+											is_in_home_area = yes
+										}
+									}
+								}
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+					}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+								type = industrial_complex
+								level = 2
+								instant_build = yes
+							}
+						}
+				}
+				search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	}
+
+	focus = {
+		id = SIA_urbanisation_effort
+		icon = GFX_focus_POL_develop_polish_shipbuilding
+		cost = 10
+		prerequisite = {
+			focus = SIA_state_sponsored_civilian_construction
+		}
+		x = 0
+		y = 2
+		relative_position_id = SIA_state_sponsored_civilian_construction
+		completion_reward = {
+			add_ideas = SIA_urbanisation_effort
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	}
+
+	focus = {
+		id = SIA_ammunitions_production
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5
+		prerequisite = {
+			focus = SIA_electrification_effort
+		}
+		x = 0
+		y = 1
+		relative_position_id = SIA_electrification_effort
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+				search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	}
+
+	focus = {
+		id = SIA_artillery_factories
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5
+		prerequisite = {
+			focus = SIA_ammunitions_production
+		}
+		prerequisite = {
+			focus = SIA_dig_for_tungsten
+		}
+		x = 1
+		y = 1
+		relative_position_id = SIA_dig_for_tungsten
+			completion_reward = {
+					add_ideas = SIA_artillery_factories
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+				search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	}
+
+	focus = {
+		id = SIA_establish_military_factories
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5
+		prerequisite = {
+			focus = SIA_ammunitions_production
+		}
+		x = 0
+		y = 2
+		relative_position_id = SIA_ammunitions_production
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+				search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	}
+
+	focus = {
+		id = SIA_state_sponsored_civilian_construction
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5
+		prerequisite = { 
+			focus = SIA_cement_sector_improvement
+			focus = SIA_begin_industrialisation_plans
+		}
+		x = 0
+		y = 2
+		relative_position_id = SIA_mitigation_depression
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+				search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	}
+
+	focus = {
+		id = SIA_increase_the_education_budget
+		icon = GFX_SIA_kasetsartuniversity
+		cost = 5
+		prerequisite = {
+			focus = SIA_improve_our_roads
+		}
+		x = 0
+		y = 1
+		relative_position_id = SIA_improve_our_roads
+			completion_reward = {
+					add_ideas = SIA_increased_education_budget
+				}
+				search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+
+	focus = {
+		id = SIA_open_new_universities
+		icon = GFX_focus_research
+		cost = 5
+		prerequisite = {
+			focus = SIA_increase_the_education_budget
+		}
+		x = 0
+		y = 2
+		relative_position_id = SIA_increase_the_education_budget
+			completion_reward = {
+					add_research_slot = 1
+				}
+				search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+
+	focus = {
+		id = SIA_electronic_research
+		icon = GFX_goal_continuous_non_factory_construct
+		cost = 10
+		prerequisite = {
+			focus = SIA_open_new_universities
+		}
+		prerequisite = {
+			focus = SIA_state_sponsored_civilian_construction
+		}
+		x = -2
+		y = 2
+		relative_position_id = SIA_cement_sector_improvement
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 1.0
+							uses = 2
+							category = electronics
+						}
+				}
+				search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+# End Industry
+
+#Focus for Believe The Leader
+	focus = {
+		id = SIA_believetheleader
+		icon = GFX_goal_generic_secret_weapon
+		x = 17
+		y = 0
+		cost = 5
+		mutually_exclusive = {
+			focus = SIA_the_monarchist_cause
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			add_political_power = 75
+			add_stability = -0.1
+		}
+		
+	}
+	
+	#Focus for Thailand Greatness
+	focus = {
+		id = SIA_thailandgreatness
+		icon = GFX_SIA_thailandgreatness
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SIA_marriagepromotionorganization 
+		}
+		prerequisite = { 
+			focus = SIA_thaimaritimenavigation 
+		}
+		prerequisite = { 
+			focus = SIA_warpropaganda 
+		}
+		relative_position_id = SIA_marriagepromotionorganization
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = SIA_thailandgreatness
+		}
+	}
+	
+	#Focus for Marriage Promotion Organization
+	focus = {
+		id = SIA_marriagepromotionorganization
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SIA_massmedia }
+		relative_position_id = SIA_massmedia
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = SIA_Marriage_Promotion
+		}
+	}
+	
+	#Focus for War Propaganda
+	focus = {
+		id = SIA_warpropaganda
+		icon = GFX_SIA_warpropaganda
+		x = 0
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SIA_seizetheroyalresidence
+		}
+		relative_position_id = SIA_seizetheroyalresidence
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			unlock_decision_category_tooltip = SIA_annexation_of_old_lands
+		}
+	}
+	
+	#Focus for National Cultural Council
+	focus = {
+		id = SIA_nationalculturalcouncil
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		x = 2
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SIA_stateconvention }
+		relative_position_id = SIA_stateconvention
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	#Focus for Mass Media
+	focus = {
+		id = SIA_massmedia
+		icon = GFX_SIA_massmedia
+		x = 0
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SIA_newnationalanthem 
+		}
+		relative_position_id = SIA_nationalculturalcouncil
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SIA_Greater_Thai_Movement
+				add_idea = SIA_Greater_Thai_Movement_2
+			}
+		}
+	}
+	
+	#Focus for Domestic Industry Law
+	focus = {
+		id = SIA_domesticindustrylaw
+		icon = GFX_SIA_domesticindustrylaw
+		x = -2
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SIA_mitigation_depression }
+		relative_position_id = SIA_stateconvention
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SIA_Economic_Depression_1
+				add_idea = SIA_Economic_Depression_2
+			}
+		}
+	}
+	
+	#Focus for Boost Local Business
+	focus = {
+		id = SIA_boostlocalbusiness
+		icon = GFX_SIA_boostlocalbusiness
+		x = 2
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SIA_economicnationalism }
+		prerequisite = { focus = SIA_stateconvention }
+		relative_position_id = SIA_economicnationalism
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SIA_State_Capitalism
+				add_idea = SIA_State_Capitalism_2
+			}
+		}
+	}
+	
+	#Focus for Control of Chinese Affairs
+	focus = {
+		id = SIA_controlofchineseaffairs
+		icon = GFX_SIA_controlofchineseaffairs
+		x = -1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		available = {
+			has_completed_focus = SIA_thaiculturalrevolution
+		}
+		prerequisite = { focus = SIA_economicnationalism }
+		relative_position_id = SIA_economicnationalism
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			289 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#Focus for Thai Maritime Navigation
+	focus = {
+		id = SIA_thaimaritimenavigation
+		icon = GFX_SIA_thaimaritimenavigation
+		x = 0
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SIA_boostlocalbusiness 
+			focus = SIA_controlofchineseaffairs 
+		}
+		relative_position_id = SIA_economicnationalism
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_government = fascism
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.15
+			}
+		}
+	}
+	
+	#Focus for State Convention
+	focus = {
+		id = SIA_stateconvention
+		icon = GFX_SIA_culturalmandateseconomic
+		x = -3
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SIA_believetheleader }
+		relative_position_id = SIA_believetheleader
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = SIA_Greater_Thai_Movement
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.10
+			}
+		}
+	}
+	
+	#Focus for New way to be Thai
+	focus = {
+		id = SIA_newwaytobethai
+		icon = GFX_SIA_newwaytobethai
+		x = 2
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SIA_believetheleader }
+		relative_position_id = SIA_believetheleader
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_stability = 0.05
+		}
+	}
+	
+	#Focus for New National Anthem
+	focus = {
+		id = SIA_newnationalanthem
+		icon = GFX_SIA_newnationalanthem
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SIA_nationalculturalcouncil }
+		relative_position_id = SIA_nationalculturalcouncil
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_stability = 0.05
+		}
+	}
+	
+	#Focus for Exiles Phraya Songsuradet
+	focus = {
+		id = SIA_exilesphrayasongsuradet
+		icon = GFX_SIA_exilesphrayasongsuradet
+		x = -1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SIA_newwaytobethai }
+		relative_position_id = SIA_newwaytobethai
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_idea = SIA_Military_Restructuring
+		}
+		completion_reward = {
+			if = {
+				limit = { has_idea = SIA_Military_Restructuring }
+				remove_ideas = SIA_Military_Restructuring
+			}
+			remove_unit_leader = 2000
+		}
+	}
+	
+	#Focus for Economic Nationalism
+	focus = {
+		id = SIA_economicnationalism
+		icon = GFX_SIA_economicnationalism
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = SIA_domesticindustrylaw }
+		relative_position_id = SIA_domesticindustrylaw
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SIA_Economic_Depression_2
+				add_idea = SIA_State_Capitalism
+			}
+		}
+	}
+	
+	#Focus for Establish The Women’s Army
+	focus = {
+		id = SIA_establishthewomensarmy
+		icon = GFX_SIA_establishthewomensarmy
+		x = 1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SIA_newwaytobethai }
+		relative_position_id = SIA_newwaytobethai
+		completion_reward = {
+			add_ideas = SIA_Women_Army
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#Focus for Seize the Royal Residence
+	focus = {
+		id = SIA_seizetheroyalresidence
+		icon = GFX_SIA_seizetheroyalresidence
+		x = 0
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SIA_exilesphrayasongsuradet
+		}
+		relative_position_id = SIA_newwaytobethai
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			289 = {
+			add_extra_state_shared_building_slots = 2
+			}
+			798 = {
+			add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	
+	#Focus for Kasetsart University
+	focus = {
+		id = SIA_kasetsartuniversity
+		icon = GFX_SIA_kasetsartuniversity
+		x = 2
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = SIA_seizetheroyalresidence
+			focus = SIA_the_only_true_guide
+		}
+		relative_position_id = SIA_seizetheroyalresidence
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = SIA_education_reform
+			add_research_slot = 1
+		}
+	}
+	
+	#Focus for Establish State Enterprise
+	focus = {
+		id = SIA_establishstateenterprise
+		icon = GFX_focus_generic_self_management
+		x = -1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SIA_seizetheroyalresidence }
+		relative_position_id = SIA_seizetheroyalresidence
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 75
+			add_ideas = SIA_establishstateenterprise
+		}
+	}
+	
+	#Focus for Thai Cultural Revolution
+#######    Re-establish Democracy    #######
+
+# MONARCHIST RESTORATION PATH
+
+	focus = {
+		id = SIA_the_monarchist_cause
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 5
+		mutually_exclusive = {
+			focus = SIA_believetheleader
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		x = 26
+		y = 0
+		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = SIA_kuang_abhayavongsa
+		}
+
+	}
+
+	focus = {
+		id = SIA_restore_rama_vii
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = SIA_the_monarchist_cause
+		}
+		x = 0
+		y = 1
+		relative_position_id = SIA_the_monarchist_cause
+			completion_reward = {
+				add_political_power = 150
+			}
+
+	}
+
+	focus = {
+		id = SIA_municipalism
+		icon = GFX_goal_generic_construction
+		cost = 5
+		prerequisite = {
+			focus = SIA_restore_rama_vii
+		}
+		x = -1
+		y = 1
+		relative_position_id = SIA_restore_rama_vii
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+						}
+				}
+				search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	}
+
+	focus = {
+		id = SIA_supreme_council
+		icon = GFX_focus_generic_self_management
+		cost = 5
+		prerequisite = {
+			focus = SIA_restore_rama_vii
+		}
+		x = 1
+		y = 1
+		relative_position_id = SIA_restore_rama_vii
+			completion_reward = {
+					add_ideas = SIA_supreme_council
+				}
+				search_filters = { FOCUS_FILTER_POLITICAL }
+
+	}
+
+	focus = {
+		id = SIA_the_only_true_guide
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 10
+		prerequisite = {
+			focus = SIA_municipalism
+		}
+		x = -1
+		y = 1
+		relative_position_id = SIA_municipalism
+			completion_reward = {
+					remove_ideas = SIA_democratic_opposition
+				}
+
+	}
+
+	focus = {
+		id = SIA_a_new_bureaucracy
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5
+		prerequisite = {
+			focus = SIA_supreme_council
+		}
+		prerequisite = {
+			focus = SIA_municipalism
+		}
+		x = 0
+		y = 2
+		relative_position_id = SIA_restore_rama_vii
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+				search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	}
+
+	focus = {
+		id = SIA_ensure_loyalty_in_the_army
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		cost = 10
+		prerequisite = {
+			focus = SIA_supreme_council
+		}
+		x = 1
+		y = 1
+		relative_position_id = SIA_supreme_council
+			completion_reward = {
+					remove_ideas = SIA_army_opposition
+				}
+
+	}
+
+	focus = {
+		id = SIA_the_royal_cult
+		icon = GFX_focus_generic_treaty
+		cost = 5
+		prerequisite = {
+			focus = SIA_the_only_true_guide
+		}
+		x = -1
+		y = 1
+		relative_position_id = SIA_the_only_true_guide
+			completion_reward = {
+					add_stability = 0.1
+				}
+				search_filters = { FOCUS_FILTER_STABILITY }
+
+	}
+
+	focus = {
+		id = SIA_surpass_the_nobility
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		cost = 5
+		prerequisite = {
+			focus = SIA_a_new_bureaucracy
+		}
+		prerequisite = {
+			focus = SIA_the_only_true_guide
+		}
+		x = -1
+		y = 1
+		relative_position_id = SIA_a_new_bureaucracy
+			completion_reward = {
+					add_war_support = 0.1
+					add_stability = 0.1
+					add_political_power = 150
+				}
+				search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
+
+	}
+
+	focus = {
+		id = SIA_the_royal_research_foundation
+		icon = GFX_SIA_kasetsartuniversity
+		cost = 5
+		prerequisite = {
+			focus = SIA_ensure_loyalty_in_the_army
+		}
+		prerequisite = {
+			focus = SIA_a_new_bureaucracy
+		}
+		x = 1
+		y = 1
+		relative_position_id = SIA_a_new_bureaucracy
+			completion_reward = {
+					add_ideas = SIA_the_royal_research_foundation
+				}
+				search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+
+	focus = {
+		id = SIA_stay_on_guard
+		icon = GFX_focus_POL_develop_polish_shipbuilding
+		cost = 5
+		prerequisite = {
+			focus = SIA_ensure_loyalty_in_the_army
+		}
+		x = 1
+		y = 1
+		relative_position_id = SIA_ensure_loyalty_in_the_army
+		completion_reward = {
+			add_ideas = SIA_stay_on_guard
+		}
+
+	}
+
+	focus = {
+		id = SIA_a_better_kingdom
+		icon = GFX_focus_generic_manpower
+		cost = 10
+		prerequisite = {
+			focus = SIA_the_royal_cult
+		}
+		prerequisite = {
+			focus = SIA_surpass_the_nobility
+		}
+		prerequisite = {
+			focus = SIA_the_royal_research_foundation
+		}
+		prerequisite = {
+			focus = SIA_stay_on_guard
+		}
+		x = 0
+		y = 4
+		relative_position_id = SIA_restore_rama_vii
+			completion_reward = {
+					add_ideas = SIA_a_better_kingdom
+				}
+
+	}
+# END OF MONARCHIST RESTORATION PATH
+
+# LAND ARMY TREE 
+
+	focus = {
+		id = SIA_army_reform_plan
+		icon = GFX_goal_generic_army_doctrines
+		cost = 5
+		x = 4
+		y = 6
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			army_experience = 10
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
+				uses = 2
+				category = land_doctrine
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+
+	focus = {
+		id = SIA_listen_to_new_officers
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 5
+		prerequisite = {
+			focus = SIA_army_reform_plan
+		}
+		x = 0
+		y = 1
+		relative_position_id = SIA_army_reform_plan
+		completion_reward = {
+			army_experience = 25
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
+				uses = 2
+				category = land_doctrine
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+
+	focus = {
+		id = SIA_import_foreign_tanks
+		icon = GFX_goal_generic_army_tanks
+		cost = 5
+		prerequisite = {
+			focus = SIA_listen_to_new_officers
+		}
+		x = -4
+		y = 1
+		relative_position_id = SIA_listen_to_new_officers
+			completion_reward = {
+					add_tech_bonus = {
+						name = armor_bonus
+						bonus = 1
+						uses = 1
+						category = armor
+					}
+				}
+				search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+
+	focus = {
+		id = SIA_artillery_developement
+		icon = GFX_goal_generic_army_artillery
+		cost = 5
+		prerequisite = {
+			focus = SIA_listen_to_new_officers
+		}
+		x = -2
+		y = 1
+		relative_position_id = SIA_listen_to_new_officers
+			completion_reward = {
+					add_tech_bonus = {
+						name = artillery_tech_bonus_name
+						bonus = 1
+						uses = 1
+						category = artillery
+					}
+				}
+				search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+
+	focus = {
+		id = SIA_anti_tank_research
+		icon = GFX_focus_generic_manpower
+		cost = 5
+		prerequisite = {
+			focus = SIA_import_foreign_tanks
+			focus = SIA_artillery_developement
+		}
+		x = -1
+		y = 1
+		relative_position_id = SIA_artillery_developement
+			completion_reward = {
+					add_tech_bonus = {
+						name = artillery_tech_bonus_name
+						bonus = 1
+						uses = 1
+						category = cat_anti_tank
+					}
+				}
+				search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+
+	focus = {
+		id = SIA_national_mobilisation
+		icon = GFX_focus_SOV_mobilization_plan
+		cost = 5
+		prerequisite = {
+			focus = SIA_listen_to_new_officers
+		}
+		x = 0
+		y = 2
+		relative_position_id = SIA_army_reform_plan
+			completion_reward = {
+					add_war_support = 0.1
+					add_ideas = extensive_conscription
+				}
+				search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT }
+
+	}
+
+	focus = {
+		id = SIA_a_faster_army
+		icon = GFX_focus_SOV_the_road_of_life
+		cost = 5
+		prerequisite = {
+			focus = SIA_artillery_developement
+		}
+		prerequisite = {
+			focus = SIA_national_mobilisation
+		}
+		x = -1
+		y = 1
+		relative_position_id = SIA_national_mobilisation
+			completion_reward = {
+				add_tech_bonus = {
+					name = motorized_bonus
+					bonus = 3.0
+					uses = 1
+					category = motorized_equipment
+				}
+			}
+			search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+
+	focus = {
+		id = SIA_TTTTTTTT
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5
+		prerequisite = {
+			focus = SIA_a_faster_army
+		}
+		prerequisite = {
+			focus = SIA_anti_tank_research
+		}
+		x = -2
+		y = 2
+		relative_position_id = SIA_artillery_developement
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+				search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = SIA_a_canon_on_a_car
+		icon = GFX_goal_generic_army_motorized
+		cost = 5
+		prerequisite = {
+			focus = SIA_a_faster_army
+		}
+		prerequisite = {
+			focus = SIA_anti_tank_research
+		}
+		x = 0
+		y = 2
+		relative_position_id = SIA_artillery_developement
+			completion_reward = {
+					add_tech_bonus = {
+						name = motorized_bonus
+						bonus = 1
+						uses = 1
+						category = cat_mechanized_equipment
+					}
+				}
+				search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+
+	focus = {
+		id = SIA_new_rifles
+		icon = GFX_focus_secret_rearmament
+		cost = 5
+		prerequisite = {
+			focus = SIA_listen_to_new_officers
+		}
+		x = 2
+		y = 1
+		relative_position_id = SIA_listen_to_new_officers
+			completion_reward = {
+					add_tech_bonus = {
+						name = infantry_weapons_bonus
+						bonus = 1.0
+						uses = 1
+						category = infantry_weapons
+					}
+				}
+				search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+
+	focus = {
+		id = SIA_improve_logistics
+		icon = GFX_goal_generic_radar
+		cost = 5
+		prerequisite = {
+			focus = SIA_new_rifles
+		}
+		prerequisite = {
+			focus = SIA_national_mobilisation
+		}
+		x = -1
+		y = 1
+		relative_position_id = SIA_new_rifles
+			completion_reward = {
+					add_tech_bonus = {
+						name = secret_bonus
+						bonus = 1
+						uses = 1
+						category = radar_tech
+					}
+				}
+				search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+
+	focus = {
+		id = SIA_improved_r_d
+		icon = GFX_focus_research
+		cost = 5
+		prerequisite = {
+			focus = SIA_a_faster_army
+			focus = SIA_improve_logistics
+		}
+		x = 0
+		y = 2
+		relative_position_id = SIA_national_mobilisation
+			completion_reward = {
+					add_research_slot = 1
+				}
+				search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+
+	focus = {
+		id = SIA_jungle_training
+		icon = GFX_goal_infantry_offensive
+		cost = 5
+		prerequisite = {
+			focus = SIA_listen_to_new_officers
+		}
+		x = 4
+		y = 1
+		relative_position_id = SIA_listen_to_new_officers
+		completion_reward = {
+			custom_effect_tooltip = RAJ_jungle_training_effect			
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+
+	focus = {
+		id = SIA_support_our_troops
+		icon = GFX_focus_focus_fra_maquis
+		cost = 5
+		prerequisite = {
+			focus = SIA_new_rifles
+			focus = SIA_jungle_training
+		}
+		x = 3
+		y = 2
+		relative_position_id = SIA_listen_to_new_officers
+		completion_reward = {
+			add_tech_bonus = {
+				name = support_tech_bonus_name
+				bonus = 1
+				uses = 1
+				category = support_tech
+			}
+            add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}				
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = SIA_adapt_to_everything
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		prerequisite = {
+			focus = SIA_improve_logistics
+		}
+		prerequisite = {
+			focus = SIA_support_our_troops
+		}
+		x = 0
+		y = 2
+		relative_position_id = SIA_new_rifles
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
+				uses = 2
+				category = land_doctrine
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = SIA_YYYYYYYYYY
+		icon = GFX_focus_SOV_penal_battalions ##Unfortunately, the tool could not find your icon in the game's files
+		x = 2
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SIA_support_our_troops }
+		relative_position_id = SIA_new_rifles
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = SIA_Siam_Rifle_Model
+		}
+	}
+
+	focus = {
+		id = SIA_VPK
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = SIA_TTTTTTTT
+		}
+		prerequisite = { 
+			focus = SIA_improved_r_d 
+		}
+		prerequisite = {
+			focus = SIA_YYYYYYYYYY
+		}
+		x = 0
+		y = 1
+		relative_position_id = SIA_improved_r_d
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 3
+							add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 3
+							add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+								}
+						}
+				}
+				search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+# END OF LAND ARMY TREE
+
+# NAVY TREE
+
+	focus = {
+		id = SIA_naval_developement_plan
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5
+		x = 14
+		y = 7
+			completion_reward = {
+				navy_experience = 25
+					if = {
+							limit = {
+									NOT = {
+											any_owned_state = {
+													dockyard > 0
+													free_building_slots = {
+															building = dockyard
+															size > 1
+															include_locked = yes
+														}
+												}
+										}
+									any_owned_state = {
+											is_coastal = yes
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											is_coastal = yes
+											free_building_slots = {
+													building = dockyard
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = dockyard
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+					if = {
+							limit = {
+									any_owned_state = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 1
+													include_locked = yes
+												}
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = dockyard
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+					if = {
+							limit = {
+									NOT = {
+											any_owned_state = {
+													free_building_slots = {
+															building = dockyard
+															size > 1
+															include_locked = yes
+														}
+												}
+										}
+								}
+							random_state = {
+									limit = {
+											controller = {
+													tag = ROOT
+												}
+											free_building_slots = {
+													building = dockyard
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = dockyard
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+				}
+				search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	}
+
+	# REFORM OUR TACTICS
+
+	focus = {
+		id = SIA_reform_our_tactics
+		icon = GFX_goal_generic_build_navy
+		cost = 5
+		prerequisite = {
+			focus = SIA_naval_developement_plan
+		}
+		mutually_exclusive = {
+			focus = SIA_adopt_new_tactics
+		}
+		x = -3
+		y = 1
+		relative_position_id = SIA_naval_developement_plan
+			completion_reward = {
+				navy_experience = 10
+				add_doctrine_cost_reduction = {
+					name = naval_doc_bonus
+					cost_reduction = 0.25
+					uses = 2
+					category = naval_doctrine
+				}
+			}
+				search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+
+	focus = {
+		id = SIA_modernise_our_battleships
+		icon = GFX_goal_generic_navy_battleship
+		cost = 5
+		prerequisite = {
+			focus = SIA_reform_our_tactics
+		}
+		x = -1
+		y = 1
+		relative_position_id = SIA_reform_our_tactics
+			completion_reward = {
+					add_tech_bonus = {
+							name = capital_ships_bonus
+							bonus = 1.0
+							uses = 1
+							category = bb_tech
+						}
+				}
+				search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+
+	focus = {
+		id = SIA_quality_over_quantity
+		icon = GFX_goal_generic_production
+		cost = 5
+		prerequisite = {
+			focus = SIA_reform_our_tactics
+		}
+		x = 1
+		y = 1
+		relative_position_id = SIA_reform_our_tactics
+			completion_reward = {
+					add_ideas = SIA_quality_over_quantity
+				}
+
+	}
+
+	focus = {
+		id = SIA_destroyers_effort
+		icon = GFX_focus_generic_destroyer
+		cost = 5
+		prerequisite = {
+			focus = SIA_quality_over_quantity
+		}
+		prerequisite = {
+			focus = SIA_modernise_our_battleships
+		}
+		x = 0
+		y = 2
+		relative_position_id = SIA_reform_our_tactics
+			completion_reward = {
+					add_tech_bonus = {
+							name = dd_bonus
+							bonus = 3.0
+							uses = 1
+							category = dd_tech
+						}
+				}
+				search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+
+	# END OF REFORM OUR TACTICTS
+
+	# ADOPT NEW TACTICS
+
+	focus = {
+		id = SIA_adopt_new_tactics
+		icon = GFX_goal_generic_build_navy
+		cost = 5
+		prerequisite = {
+			focus = SIA_naval_developement_plan
+		}
+		mutually_exclusive = {
+			focus = SIA_reform_our_tactics
+		}
+		x = 3
+		y = 1
+		relative_position_id = SIA_naval_developement_plan
+			completion_reward = {
+				navy_experience = 10
+				add_doctrine_cost_reduction = {
+					name = naval_doc_bonus
+					cost_reduction = 0.25
+					uses = 2
+					category = naval_doctrine
+				}
+			}
+				search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+
+	focus = {
+		id = SIA_study_submarines
+		icon = GFX_goal_generic_navy_submarine
+		cost = 5
+		prerequisite = {
+			focus = SIA_adopt_new_tactics
+		}
+		x = -1
+		y = 1
+		relative_position_id = SIA_adopt_new_tactics
+			completion_reward = {
+					add_tech_bonus = {
+							name = ss_bonus
+							bonus = 1.0
+							uses = 1
+							category = ss_tech
+						}
+				}
+				search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+
+	focus = {
+		id = SIA_naval_mass_production
+		icon = GFX_focus_POL_develop_polish_shipbuilding
+		cost = 5
+		prerequisite = {
+			focus = SIA_adopt_new_tactics
+		}
+		x = 1
+		y = 1
+		relative_position_id = SIA_adopt_new_tactics
+			completion_reward = {
+					add_ideas = SIA_naval_mass_production
+				}
+				search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	}
+
+	focus = {
+		id = SIA_develop_cruisers
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 5
+		prerequisite = {
+			focus = SIA_naval_mass_production
+		}
+		prerequisite = {
+			focus = SIA_study_submarines
+		}
+		x = 0
+		y = 2
+		relative_position_id = SIA_adopt_new_tactics
+			completion_reward = {
+					add_tech_bonus = {
+							name = cr_bonus
+							bonus = 3.0
+							uses = 1
+							category = cl_tech
+							category = ca_tech
+						}
+				}
+				search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+
+
+
+	# END OF ADOPT NEW TACTICS
+
+	# SHARED NAVY FOCUSES
+
+	focus = {
+		id = SIA_increase_the_naval_production
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5
+		prerequisite = {
+			focus = SIA_reform_our_tactics
+			focus = SIA_adopt_new_tactics
+		}
+		x = 0
+		y = 2
+		relative_position_id = SIA_naval_developement_plan
+			completion_reward = {
+					if = {
+							limit = {
+									NOT = {
+											any_owned_state = {
+													dockyard > 0
+													free_building_slots = {
+															building = dockyard
+															size > 1
+															include_locked = yes
+														}
+												}
+										}
+									any_owned_state = {
+											is_coastal = yes
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											is_coastal = yes
+											free_building_slots = {
+													building = dockyard
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = dockyard
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+					if = {
+							limit = {
+									any_owned_state = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 1
+													include_locked = yes
+												}
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = dockyard
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+					if = {
+							limit = {
+									NOT = {
+											any_owned_state = {
+													free_building_slots = {
+															building = dockyard
+															size > 1
+															include_locked = yes
+														}
+												}
+										}
+								}
+							random_state = {
+									limit = {
+											controller = {
+													tag = ROOT
+												}
+											free_building_slots = {
+													building = dockyard
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = dockyard
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+				}
+				search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	}
+
+	focus = {
+		id = SIA_naval_fortifications
+		icon = GFX_focus_generic_coastal_fort
+		cost = 5
+		prerequisite = {
+			focus = SIA_increase_the_naval_production
+		}
+		x = -1
+		y = 1
+		relative_position_id = SIA_increase_the_naval_production
+			completion_reward = {
+					add_ideas = SIA_naval_fortifications
+				}
+
+	}
+
+	focus = {
+		id = SIA_increase_navy_fundings
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5
+		prerequisite = {
+			focus = SIA_increase_the_naval_production
+		}
+		x = 1
+		y = 1
+		relative_position_id = SIA_increase_the_naval_production
+			completion_reward = {
+					if = {
+							limit = {
+									NOT = {
+											any_owned_state = {
+													dockyard > 0
+													free_building_slots = {
+															building = dockyard
+															size > 1
+															include_locked = yes
+														}
+												}
+										}
+									any_owned_state = {
+											is_coastal = yes
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											is_coastal = yes
+											free_building_slots = {
+													building = dockyard
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = dockyard
+											level = 2
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									any_owned_state = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 1
+													include_locked = yes
+												}
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = dockyard
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+					if = {
+							limit = {
+									NOT = {
+											any_owned_state = {
+													free_building_slots = {
+															building = dockyard
+															size > 1
+															include_locked = yes
+														}
+												}
+										}
+								}
+							random_state = {
+									limit = {
+											controller = {
+													tag = ROOT
+												}
+											free_building_slots = {
+													building = dockyard
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = dockyard
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+				}
+				search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	}
+
+	focus = {
+		id = SIA_EEEEE
+		icon = GFX_SIA_thaimaritimenavigation
+		cost = 5
+		prerequisite = {
+			focus = SIA_naval_fortifications
+		}
+		x = -2
+		y = 2
+		relative_position_id = SIA_increase_the_naval_production
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = marine_tech	
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = tp_tech
+			}
+		}
+				search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+
+	focus = {
+		id = SIA_establish_a_naval_college
+		icon = GFX_goal_generic_build_navy
+		cost = 5
+		prerequisite = {
+			focus = SIA_increase_navy_fundings
+		}
+		prerequisite = {
+			focus = SIA_naval_fortifications
+		}
+		x = 0
+		y = 2
+		relative_position_id = SIA_increase_the_naval_production
+			completion_reward = {
+					add_doctrine_cost_reduction = {
+						name = naval_doc_bonus
+						cost_reduction = 0.25
+						uses = 2
+						category = naval_doctrine
+					}
+				}
+				search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+
+	focus = {
+		id = SIA_BBBBBBBB
+		icon = GFX_focus_POL_develop_polish_shipbuilding
+		cost = 5
+		prerequisite = {
+			focus = SIA_increase_navy_fundings
+		}
+		x = 2
+		y = 2
+		relative_position_id = SIA_increase_the_naval_production
+			completion_reward = {
+				add_ideas = SIA_Thai_Maritime_Navigation_Co
+			}
+			search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	}
+
+	# END OF SHARED NAVY FOCUSES
+# END OF NAVY TREE
+
+# AIR FORCE TREE
+
+	focus = {
+		id = SIA_the_siamese_air_force
+		icon = GFX_goal_generic_CAS
+		cost = 5
+		x = 23
+		y = 7
+			completion_reward = {
+				air_experience = 25
+				add_doctrine_cost_reduction = {
+					name = air_sup_bonus
+					cost_reduction = 0.25
+					uses = 2
+					category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = SIA_rule_the_skies
+		icon = GFX_goal_generic_air_fighter
+		cost = 5
+		prerequisite = {
+			focus = SIA_the_siamese_air_force
+		}
+		mutually_exclusive = {
+			focus = SIA_death_from_the_skies
+		}
+		x = -2
+		y = 1
+		relative_position_id = SIA_the_siamese_air_force
+			completion_reward = {
+					add_tech_bonus = {
+						name = air_bonus
+							bonus = 1
+							uses = 1
+							category = light_fighter
+						}
+				}
+				search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+
+	focus = {
+		id = SIA_long_range_fighters
+		icon = GFX_goal_generic_air_bomber
+		cost = 5
+		prerequisite = {
+			focus = SIA_rule_the_skies
+		}
+		x = -1
+		y = 1
+		relative_position_id = SIA_rule_the_skies
+			completion_reward = {
+					add_tech_bonus = {
+						name = air_bonus
+							bonus = 1
+							uses = 1
+							category = cat_heavy_fighter
+						}
+				}
+				search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+
+	focus = {
+		id = SIA_death_from_the_skies
+		icon = GFX_goal_generic_air_bomber
+		cost = 5
+		prerequisite = {
+			focus = SIA_the_siamese_air_force
+		}
+		mutually_exclusive = {
+			focus = SIA_rule_the_skies
+		}
+		x = 2
+		y = 1
+		relative_position_id = SIA_the_siamese_air_force
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_bonus
+				bonus = 1
+				uses = 1
+				category = tactical_bomber
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = SIA_establish_aviation_school
+		icon = GFX_focus_generic_military_academy
+		cost = 5
+		prerequisite = {
+			focus = SIA_build_new_airports
+		}
+		x = -1
+		y = 2
+		relative_position_id = SIA_death_from_the_skies
+		completion_reward = {
+			air_experience = 25
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.25
+				uses = 2
+				category = air_doctrine
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = SIA_troops_destruction
+		icon = GFX_goal_generic_air_fighter
+		cost = 5
+		prerequisite = {
+			focus = SIA_death_from_the_skies
+		}
+		x = 1
+		y = 1
+		relative_position_id = SIA_death_from_the_skies
+			completion_reward = {
+					add_tech_bonus = {
+						name = air_bonus
+							bonus = 1
+							uses = 1
+							category = cas_bomber
+						}
+				}
+				search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+
+	focus = {
+		id = SIA_build_new_airports
+		icon = GFX_focus_POL_warsaw_main_station
+		cost = 5
+		prerequisite = {
+			focus = SIA_the_siamese_air_force
+		}
+		x = 0
+		y = 2
+		relative_position_id = SIA_the_siamese_air_force
+			completion_reward = {
+					if = {
+							limit = {
+									capital_scope = {
+											NOT = {
+													free_building_slots = {
+															building = air_base
+															size > 1
+														}
+												}
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											free_building_slots = {
+													building = air_base
+													size > 1
+												}
+										}
+									add_building_construction = {
+											type = air_base
+											level = 7
+											instant_build = yes
+										}
+								}
+						}
+					if = {
+							limit = {
+									capital_scope = {
+											free_building_slots = {
+													building = air_base
+													size > 1
+												}
+										}
+								}
+							capital_scope = {
+									add_building_construction = {
+											type = air_base
+											level = 7
+											instant_build = yes
+										}
+								}
+						}
+				}
+				search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	}
+
+	focus = {
+		id = SIA_anti_air_protection
+		icon = GFX_focus_generic_air_defense
+		cost = 5
+		prerequisite = {
+			focus = SIA_build_new_airports
+		}
+		x = -1
+		y = 1
+		relative_position_id = SIA_build_new_airports
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 289 }
+				limit = {
+					free_building_slots = {
+						building = anti_air_building
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 5
+					instant_build = yes
+				}
+				
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+# END OF AIR FORCE TREE
+}
+

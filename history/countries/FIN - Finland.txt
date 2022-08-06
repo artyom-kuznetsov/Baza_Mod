@@ -26,13 +26,23 @@ recruit_character = FIN_lauri_malmberg
 recruit_character = FIN_olavi_sarko
 recruit_character = FIN_vaino_valve
 recruit_character = FIN_akseli_anttila
-recruit_character = FIN_harald_ohquist
 recruit_character = FIN_eero_rahola
 recruit_character = FIN_karl_oesch
-recruit_character = FIN_lauri_tiainen
 recruit_character = FIN_ralf_torngren
 recruit_character = FIN_antti_hackzell
 recruit_character = FIN_ake_henrik_gartz
+#mod
+recruit_character = FIN_bruno_salmiala
+recruit_character = FIN_aksel_airo
+recruit_character = FIN_vilho_nenonen
+recruit_character = FIN_aaro_pajari
+recruit_character = FIN_harry_alfthan
+recruit_character = FIN_hjalmar_siilasvuo
+recruit_character = FIN_fanni_luukonen
+recruit_character = FIN_aarno_jurje_koskinen
+#CO
+recruit_character = FIN_wiljo_einar_tuompo
+recruit_character = FIN_axel_erik_heinrichs
 
 
 add_ideas = {
@@ -59,8 +69,6 @@ if = {
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
 		early_ship_hull_light = 1
 		early_ship_hull_submarine = 1
 		early_ship_hull_cruiser = 1
@@ -76,67 +84,6 @@ add_ideas = {
 	limited_conscription
 }
 
-1939.1.1 = {
-	add_political_power = 1198
-	add_command_power = 100
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "FIN_1939"
-	set_technology = {
-		early_fighter = 1
-		early_bomber = 1
-		CAS1 = 1		
-		interwar_artillery = 1
-		interwar_antitank = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		support_weapons2 = 1
-
-		#doctrines
-		#Air
-		force_rotation = 1
-		fighter_baiting = 1
-
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		submarine_operations = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		fuel_silos = 1
-		oil_processing = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
-	}
-}
-
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1933.7.1"
@@ -150,18 +97,11 @@ set_popularities = {
 	neutrality = 79
 }
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1939.7.1"
-		election_frequency = 36
-		elections_allowed = yes
-	}
-}
-
 
 add_ideas = {
+	limited_conscription
 	sisu
+	FIN_lotta_svard
 }
 
 ### VARIANTS ###
@@ -214,4 +154,12 @@ if = {
 			rear_1_custom_slot = empty
 		}
 	}
+}
+
+1936.1.1.13 = {
+	
+	add_ideas = {
+		sf_minor
+	}
+
 }

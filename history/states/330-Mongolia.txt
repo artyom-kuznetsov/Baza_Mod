@@ -3,8 +3,8 @@ state={
 	id=330
 	name="STATE_330"
 	resources={
-		steel=10.000
-		chromium=15.000
+		steel=4
+		chromium=6
 	}
 
 	history={
@@ -16,7 +16,7 @@ state={
 			7799 1 
 		}
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			arms_factory = 1
 			industrial_complex = 3
 			air_base = 1
@@ -29,7 +29,7 @@ state={
 	provinces={
 		1725 1728 1798 1859 4697 4732 4801 4862 7799 7881 10554 10623 12605 12675 
 	}
-	manpower=435550
+	manpower=1035550
 	buildings_max_level_factor=1.000
 	state_category=large_town
 	local_supplies=0.000

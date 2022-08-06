@@ -148,6 +148,16 @@ set_popularities = {
 	fascism = 20
 	neutrality = 80
 }
+add_ideas = {
+	SIA_Bowring_Treaty_1925
+	SIA_Economic_Depression
+	SIA_Inflation_Problems
+	SIA_small_depression_effects
+	SIA_Military_Restructuring
+	SIA_democratic_opposition
+	SIA_army_opposition
+}
+
 
 1939.1.1 = {
 	set_politics = {

@@ -422,21 +422,21 @@ air_wings = {
 			amount = 216
 		}
 	}
-	130 = { 
+	129 = { 
 		### No. 11 Fighter Command, Essex area -- Hawker Demons, Furys, Gloster Gauntlets
 		fighter_equipment_0 = {
 			owner = "ENG" 
 			amount = 144
 		}
 	}	
-	127 = { 
+	129 = { 
 		### No. 12 Fighter Command, Nottingham area -- Hawker Demons, Furys, Gloster Gauntlets
 		fighter_equipment_0 = {
 			owner = "ENG" 
 			amount = 96
 		}
 	}	
-	131 = { 
+	129 = { 
 		### No. 13 Fighter Command, Newcastle -- Hawker Demons, Furys, Gloster Gauntlets
 		fighter_equipment_0 = {
 			owner = "ENG" 
@@ -446,35 +446,35 @@ air_wings = {
 	}
 	
 	### RAF Bomber Command ###
-	125 = { 
+	129 = { 
 		### No. 1 Bomber Command, East Anglia area -- Fairey Gordons, Battles
 		CAS_equipment_1 = {
 			owner = "ENG" 
 			amount = 64
 		}
 	}
-	125 = { 
+	129 = { 
 		### No. 2 Bomber Command, East Anglia area -- HP Heyford, Harrows, AW Whitleys
 		tac_bomber_equipment_0 = {
 			owner = "ENG" 
 			amount = 48
 		}
 	}
-	126 = { 
+	129 = { 
 		### No. 3 Bomber Command, Suffolk area -- HP Heyford, Harrows, AW Whitleys
 		tac_bomber_equipment_0 = {
 			owner = "ENG" 
 			amount = 64
 		}
 	}
-	130 = { 
+	129 = { 
 		### No. 4 Bomber Command, York area -- HP Heyford, Harrows, AW Whitleys
 		tac_bomber_equipment_0 = {
 			owner = "ENG" 
 			amount = 80
 		}
 	}
-	128 = { 
+	129 = { 
 		### No. 5 Bomber Command, Lincoln area -- Fairey Gordons, Battles
 		CAS_equipment_1 = {
 			owner = "ENG" 
@@ -483,7 +483,7 @@ air_wings = {
 	}
 
 	### RAF Coastal Command
-	130 = { 
+	129 = { 
 		### No. 16 Coastal Command -- Vickers Vildebeests
 		nav_bomber_equipment_1 = {
 			owner = "ENG" 
@@ -492,7 +492,7 @@ air_wings = {
 	}
 
 	### RAF Middle East and Africa
-	447 = { 
+	129 = { 
 		### AHQ Egypt
 		fighter_equipment_0 = {
 			owner = "ENG" 
@@ -507,14 +507,14 @@ air_wings = {
 			amount = 64
 		}
 	}
-	454 = { 
+	129 = { 
 		### RAF Palestine & Iraq
 		CAS_equipment_1 = {
 			owner = "ENG" 
 			amount = 32
 		}
 	}
-	659 = { 
+	129 = { 
 		### RAF Aden
 		fighter_equipment_0 = {
 			owner = "ENG" 
@@ -527,7 +527,7 @@ air_wings = {
 	}
 
 	### RAF Far East
-	336 = { 
+	129 = { 
 		### RAF Far East
 		nav_bomber_equipment_1 = {
 			owner = "ENG" 

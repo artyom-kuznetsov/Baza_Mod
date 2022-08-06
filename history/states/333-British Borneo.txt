@@ -4,7 +4,7 @@ state=
 	name="STATE_333"
 	manpower = 889800
 	resources={
-		rubber=200 # was: 72
+		rubber=40 # was: 72
 		oil=12 # was: 18
 	}
 	
@@ -12,7 +12,7 @@ state=
 
 	history=
 	{
-		owner = MAL
+		owner = ENG
 		victory_points = {
 			7371 1
 		}
@@ -28,7 +28,7 @@ state=
 				naval_base = 2
 			}
 		}
-		add_core_of = MAL
+		add_core_of = SWI
 	}
 
 	provinces={

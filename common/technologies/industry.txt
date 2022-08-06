@@ -218,10 +218,16 @@ technologies = {
 	#Conversion branch - Enabled in DoD
 	improved_equipment_conversion = {
 	
-		equipment_conversion_speed = 0.80
+		equipment_conversion_speed = 0.40
 
 		allow_branch = {
 			has_dlc = "Death or Dishonor"
+			OR = {
+				has_game_rule = {
+					rule   = EQUIPMENT_CONVERSION_UN
+					option = CONVERSION_UN_Y
+				}
+			}
 		}
 
 		path = {
@@ -259,7 +265,7 @@ technologies = {
 	
 	advanced_equipment_conversion = {
 		
-		equipment_conversion_speed = 0.80
+		equipment_conversion_speed = 0.40
 
 		research_cost = 2
 		start_year = 1939
@@ -848,7 +854,7 @@ technologies = {
 	fuel_refining = {
 
 		fuel_gain_factor = 0.2
-		fuel_gain_factor_from_states = 0.25
+		fuel_gain_factor_from_states = 0.1
 					
 		path = {
 			leads_to_tech = fuel_refining2 
@@ -913,7 +919,7 @@ technologies = {
 	fuel_refining2 = {
 		
 		fuel_gain_factor = 0.2
-		fuel_gain_factor_from_states = 0.25
+		fuel_gain_factor_from_states = 0.1
 
 		path = {
 			leads_to_tech = fuel_refining3 
@@ -970,7 +976,7 @@ technologies = {
 	fuel_refining3 = {
 		
 		fuel_gain_factor = 0.2
-		fuel_gain_factor_from_states = 0.25
+		fuel_gain_factor_from_states = 0.1
 
 		path = {
 			leads_to_tech = fuel_refining4 
@@ -1017,7 +1023,7 @@ technologies = {
 	fuel_refining4 = {
 		
 		fuel_gain_factor = 0.20
-		fuel_gain_factor_from_states = 0.25
+		fuel_gain_factor_from_states = 0.1
 
 		path = {
 			leads_to_tech = fuel_refining5
@@ -1064,7 +1070,7 @@ technologies = {
 	fuel_refining5 = {
 		
 		fuel_gain_factor = 0.20
-		fuel_gain_factor_from_states = 0.25
+		fuel_gain_factor_from_states = 0.1
 
 		research_cost = 3
 		start_year = 1943
@@ -1165,7 +1171,7 @@ technologies = {
 	
 	oil_processing = {
 		
-		fuel_gain_factor_from_states = 1.0
+		fuel_gain_factor_from_states = 0.5
 
 		start_year = 1937
 
@@ -1221,13 +1227,13 @@ technologies = {
 	
 	improved_oil_processing = {
 		
-		fuel_gain_factor_from_states = 1.0
+		fuel_gain_factor_from_states = 0.5
 
 		path = {
 			leads_to_tech = advanced_oil_processing
 			research_cost_coeff = 1
 		}
-
+		
 		research_cost = 1.5
 		start_year = 1939
 		
@@ -1281,7 +1287,7 @@ technologies = {
 	
 	advanced_oil_processing = {
 
-		fuel_gain_factor_from_states = 1.0
+		fuel_gain_factor_from_states = 0.5
 
 		path = {
 			leads_to_tech = modern_oil_processing
@@ -1336,11 +1342,11 @@ technologies = {
 
 	modern_oil_processing = {
 
-		fuel_gain_factor_from_states = 1.0
+		fuel_gain_factor_from_states = 0.5
 		
 		research_cost = 1.5
 		start_year = 1943
-
+		
 		folder = {
 			name = industry_folder
 			position = { x = -1 y = 10 }
@@ -1382,7 +1388,7 @@ technologies = {
 			modify_building_resources = {
 				building = synthetic_refinery
 				resource = rubber
-				amount = 5
+				amount = 1
 			}
 		}
 
@@ -1442,7 +1448,7 @@ technologies = {
 			modify_building_resources = {
 				building = synthetic_refinery
 				resource = rubber
-				amount = 5
+				amount = 1
 			}
 		}
 
@@ -1502,7 +1508,7 @@ technologies = {
 			modify_building_resources = {
 				building = synthetic_refinery
 				resource = rubber
-				amount = 5
+				amount = 1
 			}
 		}
 
@@ -1562,7 +1568,7 @@ technologies = {
 			modify_building_resources = {
 				building = synthetic_refinery
 				resource = rubber
-				amount = 5
+				amount = 1
 			}
 		}
 		

@@ -43,11 +43,11 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 10
 		
-		build_cost_ic = 35
+		build_cost_ic = 70
 		resources = {
 			#oil = 1
-			aluminium = 10
-			rubber = 5
+			aluminium = 2
+			rubber = 1
 		}
 		fuel_consumption = 0.36
 	}
@@ -90,11 +90,11 @@ equipments = {
 		naval_strike_attack = 15
 		naval_strike_targetting = 6
 		
-		build_cost_ic = 45
+		build_cost_ic = 90
 		resources = {
-			aluminium = 10
+			aluminium = 2
 			tungsten = 3
-			rubber = 5
+			rubber = 1
 		}
 		
 		manpower = 80
@@ -138,11 +138,11 @@ equipments = {
 		naval_strike_attack = 5
 		naval_strike_targetting = 10
 		
-		build_cost_ic = 28
+		build_cost_ic = 56
 		resources = {
 			#oil = 1			
-			aluminium = 10
-			rubber = 5
+			aluminium = 2
+			rubber = 1
 		}
 		
 		manpower = 40
@@ -156,7 +156,7 @@ equipments = {
 
 		archetype = tac_bomber_equipment
 		priority = 105
-		is_convertable = yes
+		
 		air_range = 1400
 		maximum_speed = 250
 		air_agility = 16
@@ -165,7 +165,7 @@ equipments = {
 		air_bombing = 10
 		air_ground_attack = 3
 		
-		# build_cost_ic = 18
+		# build_cost_ic = 36
 		naval_strike_attack = 4
 		naval_strike_targetting = 6
 	}
@@ -178,10 +178,7 @@ equipments = {
 		archetype = tac_bomber_equipment
 		parent = tac_bomber_equipment_0
 		priority = 110
-		is_convertable = yes
-		can_convert_from = {
-			tac_bomber_equipment_0
-		}
+		
 		air_range = 2400
 		maximum_speed = 430
 		air_agility =20
@@ -190,11 +187,11 @@ equipments = {
 		air_bombing = 12
 		air_ground_attack = 6
 		
-		build_cost_ic = 37
+		build_cost_ic = 74
 		resources = {
 			#oil = 1
-			aluminium = 15
-			rubber = 5
+			aluminium = 3
+			rubber = 1
 		}
 		naval_strike_attack = 8
 		naval_strike_targetting = 6
@@ -207,11 +204,7 @@ equipments = {
 		archetype = tac_bomber_equipment
 		parent = tac_bomber_equipment_1
 		priority = 110
-		can_convert_from = {
-			tac_bomber_equipment_0
-			tac_bomber_equipment_1
-		}
-		is_convertable = yes
+		
 		air_range = 2500
 		maximum_speed = 440
 		air_agility =25
@@ -220,11 +213,11 @@ equipments = {
 		air_bombing = 14
 		air_ground_attack = 10
 		
-		build_cost_ic = 39
+		build_cost_ic = 78
 		resources = {
 			#oil = 1
-			aluminium = 20
-			rubber = 5
+			aluminium = 4
+			rubber = 1
 		}
 		naval_strike_attack = 12
 		naval_strike_targetting = 6
@@ -237,11 +230,7 @@ equipments = {
 		archetype = tac_bomber_equipment
 		parent = tac_bomber_equipment_2
 		priority = 110
-		can_convert_from = {
-			tac_bomber_equipment_0
-			tac_bomber_equipment_1
-			tac_bomber_equipment_2
-		}
+		
 		air_range = 3000
 		maximum_speed = 480
 		air_agility = 30
@@ -250,11 +239,11 @@ equipments = {
 		air_bombing = 16
 		air_ground_attack = 15
 		
-		build_cost_ic = 41
+		build_cost_ic = 82
 		resources = {
 			#oil = 1
-			aluminium = 25
-			rubber = 5
+			aluminium = 5
+			rubber = 1
 		}
 		naval_strike_attack = 15
 		naval_strike_targetting = 6
@@ -263,7 +252,7 @@ equipments = {
 	# Basic Jet tac_bomber
 	jet_tac_bomber_equipment_1 = {
 		year = 1945
-		is_convertable = yes
+
 		archetype = jet_tac_bomber_equipment
 		priority = 120
 		
@@ -275,19 +264,17 @@ equipments = {
 		air_bombing = 16
 		air_ground_attack = 15
 		
-		# build_cost_ic = 26
+		# build_cost_ic = 52
 	}
 
 	# Improved Jet tac_bomber
 	jet_tac_bomber_equipment_2 = {
 		year = 1950
-		is_convertable = yes
+
 		archetype = jet_tac_bomber_equipment
 		parent = jet_tac_bomber_equipment_1
 		priority = 120
-		can_convert_from = {
-			jet_tac_bomber_equipment_1
-		}
+		
 		air_range = 5000
 		maximum_speed = 1000
 		air_agility = 57
@@ -296,11 +283,11 @@ equipments = {
 		air_bombing = 20
 		air_ground_attack = 20
 		
-		build_cost_ic = 48
+		build_cost_ic = 96
 		resources = {
-			aluminium = 15
+			aluminium = 3
 			tungsten = 3
-			rubber = 5
+			rubber = 1
 		}
 	}
 
@@ -311,14 +298,14 @@ equipments = {
 
 		archetype = heavy_fighter_equipment
 		priority = 100
-		is_convertable = yes
+		
 		air_range = 1300
 		maximum_speed = 500
 		air_agility = 25
 		air_attack = 36
 		air_defence = 13
 		
-		# build_cost_ic = 16
+		# build_cost_ic = 32
 		naval_strike_attack = 3
 		naval_strike_targetting = 6
 	}
@@ -329,21 +316,18 @@ equipments = {
 		archetype = heavy_fighter_equipment
 		parent = heavy_fighter_equipment_1
 		priority = 100
-		is_convertable = yes
-		can_convert_from = {
-			heavy_fighter_equipment_1
-		}
+		
 		air_range = 1700
 		maximum_speed = 550
 		air_agility = 30
 		air_attack = 46
 		air_defence = 15
 		
-		build_cost_ic = 30
+		build_cost_ic = 60
 		resources = {
 			#oil = 1			
-			aluminium = 15
-			rubber = 5
+			aluminium = 3
+			rubber = 1
 		}
 		naval_strike_attack = 6
 		naval_strike_targetting = 10
@@ -355,21 +339,18 @@ equipments = {
 		archetype = heavy_fighter_equipment
 		parent = heavy_fighter_equipment_2
 		priority = 100
-		can_convert_from = {
-			heavy_fighter_equipment_1
-			heavy_fighter_equipment_2
-		}
+		
 		air_range = 2000
 		maximum_speed = 600
 		air_agility = 33
 		air_attack = 54
 		air_defence = 18
 		
-		build_cost_ic = 32
+		build_cost_ic = 64
 		resources = {
 			#oil = 1			
-			aluminium = 20
-			rubber = 5
+			aluminium = 4
+			rubber = 1
 		}
 		naval_strike_attack = 9
 		naval_strike_targetting = 10
@@ -387,7 +368,7 @@ equipments = {
 		group_by = archetype
 		sprite = scout_plane
 		air_map_icon_frame = 13
-		is_convertable = yes
+		
 		interface_category = interface_category_air
 		
 		# scout_plane
@@ -407,8 +388,8 @@ equipments = {
 		naval_strike_targetting = 0
 		
 		resources = {			
-			aluminium = 10
-			rubber = 5
+			aluminium = 2
+			rubber = 1
 		}
 		
 		manpower = 40
@@ -417,26 +398,24 @@ equipments = {
 
 	scout_plane_equipment_1 = {
 		year = 1936
-		is_convertable = yes
+
 		archetype = scout_plane_equipment
 		priority = 100
-		is_convertable = yes
+		
 		air_range = 1300
 		maximum_speed = 500
 		air_agility = 25
 		air_attack = 0
 		air_defence = 13
 		
-		build_cost_ic = 20
+		build_cost_ic = 40
 		naval_strike_attack = 0
 		naval_strike_targetting = 0
 	}
 	
 	scout_plane_equipment_2 = {
 		year = 1940
-		can_convert_from = {
-			scout_plane_equipment_1
-		}
+
 		archetype = scout_plane_equipment
 		parent = scout_plane_equipment_1
 		priority = 100
@@ -447,10 +426,10 @@ equipments = {
 		air_attack = 0
 		air_defence = 15
 
-		build_cost_ic = 20
+		build_cost_ic = 40
 		resources = {		
-			aluminium = 15
-			rubber = 5
+			aluminium = 3
+			rubber = 1
 		}
 		naval_strike_attack = 0
 		naval_strike_targetting = 0

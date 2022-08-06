@@ -1,0 +1,13 @@
+﻿l_english:
+ italy.17.t:0 "The Ethiopian War has ended"
+ italy.17.d:0 "The war has claimed enough victims"
+ italy.17.a:0 "We shall rest, for now..."
+ italy.18.t:0 "Mussolini speaks at Palazzo Venezia"
+ italy.18.d:0 "It is the hour of irrevocable decisions. The declaration of war has already been delivered to the ambassadors of Great Britain and France. We are going into battle against the plutocratic and reactionary democracies of the west who have always blocked the march and often undermined the very existence of the Italian people."
+ italy.18.a:0 "And we will win!"
+ finland.11.t:0 "The Winter War"
+ finland.11.d:0 "Finally, the territorial ambitions of [SOV.GetNameDef] have culminated in the invasion of our country by this most vile enemy. We must take all measures in our power to form a solid defense against this ruthless attack. Let them pay for every step forward in our land!"
+ finland.11.a:0 "Defeat"
+ finland.12.t:0 "The Second Soviet-Finnish War"
+ finland.12.d:0 "Finally, the territorial ambitions of [SOV.GetNameDef] have culminated in the invasion of our country by this most vile enemy. We must take all measures in our power to form a solid defense against this ruthless attack. Let them pay for every step forward in our land!"
+ finland.12.a:0 "This is our chance"

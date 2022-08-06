@@ -8,15 +8,15 @@ state={
 	history={
 		owner = MON
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 		}
 		victory_points = {
 			12612 1 #Sainshand
 		}
 		add_core_of = MON
 	}
-	manpower=11000
+	manpower=311000
 	buildings_max_level_factor=1.000
-	state_category = wasteland
+	state_category = town
 	local_supplies=0.000
 }

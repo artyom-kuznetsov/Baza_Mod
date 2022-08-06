@@ -4,7 +4,7 @@ state={
 	name="STATE_51"
 	manpower = 6144743
 	resources={
-		steel=150 # was: 54
+		steel=30 # was: 54
 	}
 
 
@@ -32,13 +32,6 @@ state={
 
 		}
 		add_core_of = GER
-
-		1939.1.1 = {
-			buildings = {
-				air_base = 6
-				radar_station = 1
-			}
-		}
 	
 		set_demilitarized_zone = yes
 	

@@ -8,11 +8,11 @@ state={
 	
 	resources={
 		rubber=3 # was: 4
-		tungsten = 460
+		tungsten = 92
 	}
 
 	history={
-		add_core_of = BRM
+		add_core_of = SWI # BRM
 		owner = RAJ
 		victory_points = {
 			1330 5 

@@ -121,7 +121,7 @@ equipments = {
 		
 		build_cost_ic = 1800
 		resources = {
-			steel = 5
+			steel = 1
 		}
 		
 		manpower = 600
@@ -152,7 +152,7 @@ equipments = {
 		naval_range = 3000
 		max_strength = 110
 		resources = {
-			steel = 10
+			steel = 2
 		}
 		module_slots = {
 			fixed_ship_battery_slot = inherit
@@ -217,7 +217,7 @@ equipments = {
 		naval_range = 4000
 		manpower = 1200
 		resources = {
-			steel = 10
+			steel = 2
 		}
 		module_slots = {
 			fixed_ship_battery_slot = inherit
@@ -293,7 +293,7 @@ equipments = {
 		naval_range = 4500
 		max_strength = 130
 		resources = {
-			steel = 15
+			steel = 3
 		}
 		module_slots = {
 			fixed_ship_battery_slot = inherit
@@ -390,7 +390,7 @@ equipments = {
 		reliability = 0.8
 		resources = {
 			#oil = 1
-			steel = 10
+			steel = 2
 		}
 	}
 
@@ -439,7 +439,7 @@ equipments = {
 		build_cost_ic = 1650
 		resources = {
 			#oil = 1
-			steel = 15
+			steel = 3
 		}
 		manpower = 800
 	}
@@ -490,7 +490,7 @@ equipments = {
 		build_cost_ic = 1700
 		resources = {
 			#oil = 2
-			steel = 15
+			steel = 3
 		}
 		manpower = 960
 	}
@@ -542,7 +542,7 @@ equipments = {
 		build_cost_ic = 2000
 		resources = {
 			#oil = 2
-			steel = 20
+			steel = 4
 			chromium = 1
 		}
 		manpower = 1140
@@ -652,7 +652,7 @@ equipments = {
 		build_cost_ic = 2200
 		resources = {
 			#oil = 1
-			steel = 15
+			steel = 3
 		}
 		
 		manpower = 1500
@@ -702,7 +702,7 @@ equipments = {
 		build_cost_ic = 2600
 		resources = {
 			#oil = 1
-			steel = 20
+			steel = 4
 		}		
 		manpower = 1700
 	}
@@ -752,7 +752,7 @@ equipments = {
 		build_cost_ic = 3000
 		resources = {
 			#oil = 2
-			steel = 20
+			steel = 4
 		}		
 		manpower = 1900
 	}
@@ -803,7 +803,7 @@ equipments = {
 		build_cost_ic = 3400
 		resources = {
 			#oil = 2
-			steel = 25
+			steel = 5
 			chromium = 1
 		}		
 		manpower = 2200
@@ -918,7 +918,7 @@ equipments = {
 		build_cost_ic = 1700
 		resources = {
 			#oil = 2
-			steel = 10
+			steel = 2
 		}
 		
 		manpower = 960
@@ -1011,7 +1011,7 @@ equipments = {
 		build_cost_ic = 1700
 		resources = {
 			#oil = 2
-			steel = 15
+			steel = 3
 		}
 		
 		manpower = 960
@@ -1029,7 +1029,7 @@ equipments = {
 		naval_range = 7500
 		max_strength = 220
 		resources = {
-			steel = 15
+			steel = 3
 		}
 		module_slots = {
 			fixed_ship_battery_slot = {
@@ -1086,7 +1086,7 @@ equipments = {
 		manpower = 1800
 		build_cost_ic = 3500
 		resources = {
-			steel = 15
+			steel = 3
 		}
 
 		hg_attack = 0

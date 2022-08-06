@@ -7,14 +7,13 @@ state={
 	state_category = rural
 
 	resources={
-		aluminium=35 # was: 10
+		aluminium=7 # was: 10
 	}
 
 	history={
 		owner = MAN
 		add_core_of = CHI
 		add_core_of = MAN
-		add_core_of = PRC
 		buildings = {
 			infrastructure = 2
 			#industrial_complex = 1

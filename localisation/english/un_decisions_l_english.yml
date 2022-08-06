@@ -1,0 +1,113 @@
+﻿l_english:
+
+ hmm_militarypolice:0 "Military Police"
+ hmm_garrison:0 "Garrison Division"
+ hmm_converts:0 "Converts"
+ hmm_templates:0 "For the lazy people"
+ one_div_training:0 "1Div Training Template"
+ ########## USA
+
+ USA_annex:0 "Manage Territories"
+ USA_annex_phi:0 "Our People demand a new Holiday Resort!"
+ ########## SPR
+
+ SPR_hmm:0 "Just Franco things"
+ SPR_annex_por:0 "Unite Iberia"
+ SPR_vets_cw:0 "Perfectly Balanced"
+ ########## AST
+
+ AST_hmm:0 "Australia does shit"
+ AST_hmm_annex_NZL:0 "More Islands"
+ ########## NZL
+
+ NZL_hmm:0 "NewZealand does stuff"
+ NZL_hmm_annex_AST:0 "Gib Clay"
+ ########## FRA
+
+ FRA_be_useful:0 "Maybe we should think of the future..."
+ ########## ENG
+
+ ENG_hmm:0 "Friendly Empire"
+ ENG_hmm_suriname:0 "Aluminium you said? I heard you are in need of some Democrazy" 
+ ENG_hmm_annex_AST:0 "Prisoners should not be free"
+ ENG_hmm_annex_NZL:0 "Is that even a country?"
+ ENG_hmm_FRA_union:0 "Catch the Frogs"
+ ENG_hmm_annex_HOL:0 "Need more Aluminum"
+ ENG_un_annex_IRE:0 "Unite the islands!"
+ ENG_hmm_annex_RAJ:0 "Close the East India Company"
+ ENG_hmm_annex_CAN:0 "Which America ? Britain!"
+ ENG_hmm_annex_SAF:0 "Independence, what's the word?"
+ ENG_un_annex_DEN:0 "To send troops to Greenland!"
+ ENG_un_annex_canary:0 "We need that now!"
+ ENG_annex_un:0 "Wartime Situation"
+ ENG_hmm_desc:0 " "
+ ENG_annex_un_desc:0 " "
+ un_annex_decisions_desc:0 " "
+ ########## GER
+ 
+ GER_un:0 "Make Germany Great"
+ GER_un_annex_HUN:0 "Потребовать контроль у Венгрии"
+ GER_un_annex_FIN:0 "Потребовать контроль у Финляндии" 
+ GER_un_annex_ROM:0 "Потребовать контроль у Румынии"
+ GER_un_annex_BUL:0 "Потребовать контроль у Болгарии"
+ ITA_un_annex_BUL:0 "Потребовать контроль у Болгарии"
+ ###
+ GER_reichskommissariat_belgien_nordfrankreich:0 "Reichskommissariat Belgien"
+ GER_reichskommissariat_norwegen:0 "Reichskommissariat Nordland"
+ GER_grind:0 "Spanish Volunteer Forces"
+ GER_xp_cw:0 "The Spanish Civil War was a Testcase for the Wehrmacht"
+ GER_annex:0 "Special Policital Actions"
+ GER_iraq:0 "For the Promise of Freedom from their Colonial Overlords, We can seize control over the iraqie Oil fields and fuel our War machine"
+ ###
+ un_annex_decisions:0 "Operation Pacification"
+ GER_un_compliance_GRE:0 "Установить подконтрольное правительство Греции"
+ GER_un_compliance_YUG:0 "Установить подконтрольное правительство Югославии"
+ GER_un_compliance_LUX:0 "Установить подконтрольное правительство Люксембург"
+ GER_un_compliance_BEL:0 "Установить подконтрольное правительство Бельгии"
+ GER_un_compliance_HOL:0 "Установить подконтрольное правительство Нидерланды"
+ GER_un_compliance_NOR:0 "Установить подконтрольное правительство Норвегии"
+ GER_un_compliance_DEN:0 "Установить подконтрольное правительство Дании"
+ GER_un_compliance_SWI:0 "Установить подконтрольное правительство Швейцарии"
+ ########### SOV
+ 
+ SOV_grind_ethiopia_no_ter:0 "Until the end of the war is left"
+ SOV_puppet_MON:0 "Come to Papa Stalin"
+ SOV_annex_MON:0 "More Workers to liberate"
+ SOV_grind_SOV:0 "The Soviet-Finnish war"
+ SOV_grind_ethiopia:0 "Until the end of the war is left"
+ HMM_SOV:0 "Make USSR Great Again"
+ SOV_swap_memiums:0 "To Meme or Not to Meme"
+ SOV_swap_meta:0 "Back to Meta"
+ SOV_grind:0 "The Grind"
+ SOV_grind_finland:0 "Lessons from Finland"
+ SOV_grind:0 "The Grind"
+ SOV_grind_finland:0 "Lessons from Finland"
+ SOV_xp_cw:0 "The Spanish Civil War was a Testcase for the Red Army"
+ SOV_seize_gold:0 "We must safeguard the Gold for the Workers Revolution"
+ ###########
+ 
+ JAP_hmm_resi:0 "Dealmaker Hirohito"
+ JAP_hmm_oil_1:0 "Buy Oil From the Commies"
+ JAP_hmm_oil_1_remove:0 "We dont need that anymore"
+ JAP_hmm_oil_2:0 "Buy even more Oil"
+ JAP_hmm_oil_2_remove:0 "Fuck off Communists"
+ JAP_annex:0 "Integrate Puppets"
+ JAP_annex_desc:0 " "
+ JAP_annex_meng:0 "Our Puppet Mengkuko fail even the simplest task, we need to take control..."
+ JAP_annex_man:0 "The Ai is prolly better than the Player who abandoned you, what ever just take it..."
+ JAP_annex_sia:0 "Siam is natural Japanese clay"
+ JAP_puppet_sia:0 "Kneel before your Master filthy Minor Player"
+ ###########
+
+ ITA_grind:0 "The Grind"
+ ITA_grind_ethiopia:0 "Lessons from Ethiopia" 
+ ITA_grind:0 "The Grind"
+ ITA_grind_ethiopia:0 "Lessons from Ethiopia"
+ ITA_ww2:0 "La grande guerra"
+ ITA_join_it:0 "We have to strike quickly"
+ ########### 
+ 
+ ENG_un_annex_IRQ:0 "To bring troops into Iraq"
+ 
+SIA_un_annex:0"Territorial expansion"
+SIA_annex_indochina:0"Ask Indochina from Japan"

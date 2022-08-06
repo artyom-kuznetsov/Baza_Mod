@@ -373,7 +373,7 @@ instant_effect =
 				creator = "JAP"
 			}
 			requested_factories = 1
-			progress = 0.2
+			progress = 0.99
 			amount = 1
 		}
 		# CV (x1): "Soryu"
@@ -384,7 +384,7 @@ instant_effect =
 				creator = "JAP" 
 			}
 			requested_factories = 1
-			progress = 0.66
+			progress = 0.99
 
 			amount = 1
 		}
@@ -396,7 +396,7 @@ instant_effect =
 				creator = "JAP" 
 			}
 			requested_factories = 1
-			progress = 0.2
+			progress = 0.99
 			amount = 1
 		}		
 		# DD (x5): "Shiratsuyu" "Shigure" "Murasame" "Harusame" "Samidare"
@@ -407,7 +407,7 @@ instant_effect =
 				version_name = "Fubuki Class"
 			}
 			requested_factories = 1
-			progress = 0.7
+			progress = 0.99
 			amount = 2
 		}		
 		add_equipment_production = {				
@@ -417,7 +417,7 @@ instant_effect =
 				version_name = "Fubuki Class"
 			}
 			requested_factories = 1
-			progress = 0.6
+			progress = 0.99
 			amount = 1
 		}		
 		add_equipment_production = {				
@@ -427,7 +427,7 @@ instant_effect =
 				version_name = "Fubuki Class"
 			}
 			requested_factories = 1
-			progress = 0.5
+			progress = 0.99
 			amount = 2
 		}		
 		add_equipment_production = {				
@@ -437,7 +437,7 @@ instant_effect =
 				version_name = "Fubuki Class"
 			}
 			requested_factories = 1
-			progress = 0.4
+			progress = 0.99
 			amount = 1
 		}		
 		add_equipment_production = {				
@@ -447,7 +447,7 @@ instant_effect =
 				version_name = "Fubuki Class"
 			}
 			requested_factories = 1
-			progress = 0.3
+			progress = 0.99
 			amount = 1
 		}		
 		# SS (x4): "I-172" "I-73" "I-174" "I-175"
@@ -457,7 +457,7 @@ instant_effect =
 				creator = "JAP" 
 			}
 			requested_factories = 1
-			progress = 0.7
+			progress = 0.99
 			amount = 2
 		}
 		add_equipment_production = {				
@@ -466,7 +466,7 @@ instant_effect =
 				creator = "JAP" 
 			}
 			requested_factories = 1
-			progress = 0.6
+			progress = 0.99
 			amount = 2
 		}
 		# SS (x2): "I-7" "I-8"
@@ -477,7 +477,7 @@ instant_effect =
 				version_name = "Kaidai III Class"
 			}
 			requested_factories = 1
-			progress = 0.7
+			progress = 0.99
 			amount = 1
 		}
 		add_equipment_production = {				
@@ -487,7 +487,7 @@ instant_effect =
 				version_name = "Kaidai III Class"
 			}
 			requested_factories = 1
-			progress = 0.6
+			progress = 0.99
 			amount = 1
 		}
 		# SS (x1): "Ro-34"
@@ -497,7 +497,7 @@ instant_effect =
 				creator = "JAP" 
 			}
 			requested_factories = 1
-			progress = 0.80
+			progress = 0.99
 			amount = 1
 		}
 }

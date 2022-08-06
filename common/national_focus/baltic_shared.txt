@@ -64,6 +64,10 @@ shared_focus = {
 
 	}
 
+	allow_branch = {
+		date > 1966.5.1
+	}
+
 	bypass = {
 		
 	}
@@ -2437,6 +2441,10 @@ shared_focus = {
 		}
 	}
 
+	allow_branch = {
+		date > 1966.5.1
+	}
+
 	available = {
 		
 	}
@@ -3533,6 +3541,7 @@ shared_focus = {
 		factor = 1
 	}
 
+	
 	available = {
 	}
 

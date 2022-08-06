@@ -1,0 +1,49 @@
+################
+##### ENG ######
+################
+
+ENG_move_to_secure_the_dominions = {
+	
+	icon = eng_move_to_secure_the_dominions
+
+	allowed = {
+		original_tag = ENG
+	}
+}
+
+ENG_imperial_conference_decision = {
+	icon = eng_imperial_conference
+
+	allowed = {
+		original_tag = ENG
+	}
+}
+
+ENG_enforce_the_naval_treaties = {
+	icon = generic_political_actions
+
+	allowed = {
+		original_tag = ENG
+	}
+}
+
+ENG_hmm = {
+	icon = generic_monarchism
+
+	picture = GFX_decision_cat_PB_ENG_Imperial_Management_Picture
+
+	allowed = {
+		original_tag = ENG
+	}
+}
+
+ENG_annex_un = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_PB_AME_Bleeding_South
+
+	allowed = {
+		original_tag = ENG
+	}
+}

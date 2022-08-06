@@ -155,7 +155,7 @@ instant_effect = {
 			version_name = "Leningrad & Minsk Class"
 		}
 		requested_factories = 1
-		progress = 0.70
+		progress = 0.99
 		amount = 2
 	}
 	add_equipment_production = {
@@ -165,7 +165,7 @@ instant_effect = {
 			version_name = "Leningrad & Minsk Class"
 		}
 		requested_factories = 1
-		progress = 0.60
+		progress = 0.99
 		amount = 2
 	}
 	# SS: Shchuka class (x29) ("Shch-125" "Shch-205" "Shch-206" "Shch-207" "Shch-310" "Shch-311" "Shch-126" "Shch-127" "Shch-128" "Shch-129" "Shch-130" "Shch-131" "Shch-132" "Shch-133" 
@@ -178,7 +178,7 @@ instant_effect = {
 			version_name = "Series IX Srednyaya"
 		}
 		requested_factories = 1
-		progress = 0.80
+		progress = 0.99
 		amount = 8
 	}
 	add_equipment_production = {
@@ -188,7 +188,7 @@ instant_effect = {
 			version_name = "Series IX Srednyaya"
 		}
 		requested_factories = 1
-		progress = 0.80
+		progress = 0.99
 		amount = 8
 	}
 	add_equipment_production = {
@@ -198,7 +198,7 @@ instant_effect = {
 			version_name = "Series IX Srednyaya"
 		}
 		requested_factories = 1
-		progress = 0.70
+		progress = 0.99
 		amount = 8
 	}
 	add_equipment_production = {
@@ -208,7 +208,7 @@ instant_effect = {
 			version_name = "Series IX Srednyaya"
 		}
 		requested_factories = 1
-		progress = 0.70
+		progress = 0.99
 		amount = 7
 	}
 }

@@ -22,7 +22,29 @@ focus_tree = {
 	id = generic_focus
 	
 	country = {
-		factor = 1
+		factor = 0
+		
+		modifier = {
+			add = 100
+			OR = {
+				tag = TUR
+				tag = SWE
+				tag = CUB
+				tag = SWI
+				tag = VEN
+				tag = POL
+				tag = LIT
+				tag = LAT
+				tag = EST
+				tag = HOL
+				tag = CZE
+				tag = YUG
+				tag = GRE
+				tag = CHI
+				tag = ALB
+				tag = BEL
+			}
+		}
 	}
 	
 	default = yes

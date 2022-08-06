@@ -1,0 +1,344 @@
+
+continent = {
+	name = europe
+	army = {
+		male = {		
+		}
+	}
+	
+	navy = {
+		male = {
+			
+		}
+	}
+	
+	political = {
+		communism = {
+				male = { 
+					
+			}
+		}
+		democratic = {
+				male = { 
+					
+			}
+		}
+		fascism = {
+				male = { 
+					
+			}
+		}
+		neutrality = {
+				male = { 
+					
+			}
+		}
+	}
+
+}
+
+continent = {
+	name = north_america
+	army = {
+		male = {
+			"gfx/leaders/Europe/portrait_europe_generic_land_10.dds"	
+			"gfx/leaders/Europe/portrait_europe_generic_land_11.dds"
+		}
+	}
+	
+	navy = {
+		male = {
+			
+		}
+	}
+
+	political = {
+		communism = {
+				male = { 
+					
+			}
+		}
+		democratic = {
+				male = { 
+					
+			}
+		}
+		fascism = {
+				male = { 
+						
+			}
+		}
+		neutrality = {
+				male = { 
+						
+			}
+		}
+	}
+
+}
+
+continent = {
+	name = south_america
+	army = {
+		male = {
+		}
+	}
+	
+	navy = {
+		male = {
+			
+		}
+	}
+	
+	political = {
+		communism = {
+				male = { 
+					
+			}
+		}
+		democratic = {
+				male = { 
+					
+			}
+		}
+		fascism = {
+				male = { 
+					
+			}
+		}
+		neutrality = {
+				male = { 
+					 
+			}
+		}
+	}
+
+}
+
+continent = {
+	name = australia
+	army = {
+		male = {
+			"gfx/leaders/Europe/portrait_europe_generic_land_10.dds"	
+			"gfx/leaders/Europe/portrait_europe_generic_land_11.dds"	
+		}
+	}
+	
+	navy = {
+		male = {
+		
+		}
+	}
+	
+	political = {
+		communism = {
+				male = { 
+					
+			}
+		}
+		democratic = {
+				male = {
+					
+			}
+		}
+		fascism = {
+				male = {
+					
+			}
+		}
+		neutrality = {
+				male = {
+					
+			}
+		}
+	}
+
+}
+
+continent = {
+	name = africa
+	army = {
+		male = {
+
+		}
+	}
+	
+	navy = {
+		male = {
+			
+		}
+	}
+	
+	political = {
+		communism = {
+				male = { 
+					
+			}
+		}
+		democratic = {
+				male = { 
+							
+			}
+		}
+		fascism = {
+				male = { 
+					
+			}
+		}
+		neutrality = {
+				male = { 
+					
+			}
+		}
+	}
+
+
+}
+
+continent = {
+	name = asia
+	army = {
+		male = {
+		}
+	}
+	
+	navy = {
+		male = {
+			
+		}
+	}
+
+	political = {
+		communism = {
+				male = {
+					
+			}
+		}
+		democratic = {
+				male = {
+					 
+			}
+		}
+		fascism = {
+				male = {
+					 
+			}
+		}
+		neutrality = {
+				male = {
+					 
+			}
+		}
+	}	
+
+}
+
+continent = {
+	name = middle_east
+	army = {
+		male = {
+		}
+	}
+	
+	navy = {
+		male = {
+		
+		}
+	}
+	
+	political = {
+		communism = {
+				male = { 
+					
+			}
+		}
+		democratic = {
+				male = { 
+					
+			}
+		}
+		fascism = {
+				male = { 
+					
+			}
+		}
+		neutrality = {
+				male = { 
+				 
+			}
+		}
+	}
+
+}
+
+RAJ = {
+	army = {
+		male = {
+			"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
+			"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic_2.dds"
+			"gfx/leaders/India/portrait_india_generic_land_3.dds"
+			"gfx/leaders/India/portrait_india_generic_land_4.dds"
+		}
+	}
+	navy = {
+		
+	}
+	political = {
+		communism = {
+				male = { 
+					"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic.dds"
+			}
+		}
+		democratic = {
+				male = { 
+					"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
+			}
+		}
+		fascism = {
+				male = { 
+					"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
+			}
+		}
+		neutrality = {
+				male = { 
+					"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic.dds"
+			}
+		}
+	}
+}
+
+PAK = {
+	army = {
+		male = {
+			"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
+			"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic_2.dds"
+			"gfx/leaders/India/portrait_india_generic_land_3.dds"
+			"gfx/leaders/India/portrait_india_generic_land_4.dds"
+		}
+	}
+	navy = {
+		
+	}
+	political = {
+		communism = {
+				male = { 
+					"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
+			}
+		}
+		democratic = {
+				male = { 
+					"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
+			}
+		}
+		fascism = {
+				male = { 
+					"gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic_2.dds"
+			}
+		}
+		neutrality = {
+				male = { 
+					"gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
+			}
+		}
+	}
+}

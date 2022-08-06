@@ -1548,15 +1548,12 @@ SOV_CAV_02 = #COSSACK CAVALRY
 {
 	name = "Cossack Cavalry Division"
 
-	for_countries = { SOV UKR }
+	for_countries = { SOV }
 
 	can_use = {
-		OR = {
-			AND = {
-				tag = SOV
-				has_completed_focus = SOV_restore_cossack_units
-			}
-			tag = UKR
+		AND = {
+			tag = SOV
+			has_completed_focus = SOV_restore_cossack_units
 		}
 	}
 

@@ -350,7 +350,7 @@ instant_effect = {
 				creator = "ITA"
 			}
 			requested_factories = 2
-			progress = 0.20
+			progress = 0.99
 			amount = 1
 		}
 
@@ -361,7 +361,7 @@ instant_effect = {
 				creator = "ITA"
 			}
 			requested_factories = 2
-			progress = 0.20
+			progress = 0.99
 			amount = 1
 		}
 
@@ -373,7 +373,7 @@ instant_effect = {
 				version_name = "Montecuccoli Class"
 			}
 			requested_factories = 1
-			progress = 0.95
+			progress = 0.99
 			amount = 1
 		}
 
@@ -385,7 +385,7 @@ instant_effect = {
 				version_name = "Maestrale Class"
 			}
 			requested_factories = 1
-			progress = 0.70
+			progress = 0.99
 			amount = 1
 		}
 
@@ -397,7 +397,7 @@ instant_effect = {
 				version_name = "Maestrale Class"
 			}
 			requested_factories = 1
-			progress = 0.60
+			progress = 0.99
 			amount = 1
 		}
 
@@ -409,7 +409,7 @@ instant_effect = {
 				version_name = "Sirena Class"
 			}
 			requested_factories = 1
-			progress = 0.50
+			progress = 0.99
 			amount = 1
 		}
 	}

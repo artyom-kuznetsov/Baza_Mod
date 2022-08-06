@@ -66,10 +66,10 @@
 	focus = {
 		id = NZL_transfer_the_new_zealand_division
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = 16
+		x = 8
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -78,7 +78,9 @@
 		available = {
 
 		}
-
+		allow_branch = {
+			date > 1966.5.1
+		}
 		bypass = {
 			NOT = { is_subject_of = ENG }
 		}
@@ -107,12 +109,11 @@
 	focus = {
 		id = NZL_form_the_rnzn
 		icon = GFX_goal_generic_build_navy
-		prerequisite = { focus = NZL_transfer_the_new_zealand_division }
 		x = 0
-		y = 1
+		y = 0
 		relative_position_id = NZL_transfer_the_new_zealand_division
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -150,7 +151,7 @@
 		y = 2
 		relative_position_id = NZL_transfer_the_new_zealand_division
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -221,7 +222,7 @@
 		y = 2
 		relative_position_id = NZL_transfer_the_new_zealand_division
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -448,10 +449,10 @@
 	focus = {
 		id = NZL_expand_the_nzpaf
 		icon = GFX_goal_generic_air_doctrine
-		x = 21
+		x = 13
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -503,7 +504,7 @@
 		y = 1
 		relative_position_id = NZL_expand_the_nzpaf
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -769,10 +770,10 @@
 	focus = {
 		id = NZL_national_roads_board
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 25
+		x = 17
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 8
@@ -858,7 +859,7 @@
 		y = 1
 		relative_position_id = NZL_national_roads_board
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -895,7 +896,7 @@
 		y = 1
 		relative_position_id = NZL_national_roads_board
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -918,7 +919,7 @@
 			284 = {
 				add_resource = {
 					type = oil
-					amount = 5
+					amount = 16
 				}
 			}
 		}
@@ -968,7 +969,7 @@
 		y = 2
 		relative_position_id = NZL_national_roads_board
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1099,10 +1100,10 @@
 				limit = {
 					has_state_flag = NZL_industrial_conscription_AF
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -1118,10 +1119,10 @@
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = NZL_industrial_conscription_AF
@@ -1276,10 +1277,6 @@
 			factor = 35
 		}
 
-		available = {
-			is_subject = no
-		}
-
 		bypass = {
 
 		}
@@ -1335,7 +1332,7 @@
 	focus = {
 		id = NZL_army_reforms
 		icon = GFX_goal_generic_army_doctrines
-		x = 30
+		x = 22
 		y = 0
 
 		cost = 10
@@ -1376,7 +1373,7 @@
 		y = 1
 		relative_position_id = NZL_army_reforms
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1499,10 +1496,10 @@
 				limit = {
 					has_state_flag = NZL_domestic_arms_industry_AF
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -1518,10 +1515,10 @@
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = NZL_domestic_arms_industry_AF
@@ -1812,7 +1809,7 @@
 		y = 1
 		relative_position_id = NZL_ratana_alliance
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1838,7 +1835,7 @@
 			723 = {
 				add_extra_state_shared_building_slots = 1
 			}
-			add_stability = -0.05
+			add_stability = -0.01
 		}
 	}
 
@@ -1903,6 +1900,7 @@
 
 		completion_reward = {
 			add_ideas = NZL_the_manpower_act
+			add_manpower = 15000
 		}
 	}
 
@@ -1915,7 +1913,7 @@
 		y = 3
 		relative_position_id = NZL_ratana_alliance
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2017,7 +2015,7 @@
 		y = 4
 		relative_position_id = NZL_ratana_alliance
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2075,7 +2073,7 @@
 		y = 1
 		relative_position_id = NZL_the_first_labor_government
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 30
@@ -2100,6 +2098,7 @@
 			   	bonus = 0.05
 			}
 			add_political_power = 100
+			add_political_power = 50
 			add_opinion_modifier = { target = ENG modifier = NZL_strengthen_ties } 
 			ENG = { add_opinion_modifier = { target = NZL modifier = NZL_strengthen_ties } }
 		}
@@ -2118,6 +2117,10 @@
 
 		ai_will_do = {
 			factor = 3
+		}
+
+		allow_branch = {
+			date > 1966.5.1
 		}
 
 		available = {
@@ -2154,7 +2157,7 @@
 		y = 1
 		relative_position_id = NZL_strengthen_the_commonwealth
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2185,7 +2188,7 @@
 		y = 2
 		relative_position_id = NZL_strengthen_the_commonwealth
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2217,7 +2220,7 @@
 		y = 3
 		relative_position_id = NZL_strengthen_the_commonwealth
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 30
@@ -2238,6 +2241,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			add_political_power = 50
 			modify_tech_sharing_bonus = {
  				id = commonwealth_research
  				bonus = 0.05  # we get 20% higher bonus from this group
@@ -2654,7 +2658,4 @@
 			}
 		}
 	}
-
-
-
 }		

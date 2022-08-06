@@ -2,11 +2,11 @@ state={
 	id=286
 	name="STATE_286"
 	resources={
-		rubber=275 # was: 94.000
+		rubber=55 # was: 94.000
 	}
 
 	history={
-		add_core_of = VIN
+		add_core_of = SWI # VIN
 		owner = FRA
 		victory_points = {
 			4401 3 

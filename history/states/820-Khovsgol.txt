@@ -8,7 +8,7 @@ state={
 	history={
 		owner = MON
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 		}
 		victory_points = {
 			1791 1 #Darkhan
@@ -18,8 +18,8 @@ state={
 		}
 		add_core_of = MON
 	}
-	manpower=88200
+	manpower=188200
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category=town
 	local_supplies=0.000
 }

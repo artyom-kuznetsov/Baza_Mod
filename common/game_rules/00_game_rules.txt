@@ -21,6 +21,724 @@
 #	}
 # }
 
+political_un_1_ita = {
+	
+	name  ="POLITICAL_UN_1_ITA"
+	group ="UN_PAGROUP"
+	icon  ="GFX_UN"
+	
+	option = {
+		name = "UN_1_ITA_V"
+		text = "UN_YES"
+		desc = "UN_NO_CHANGES"
+		allow_achievements = yes
+	}
+	default = {
+		name = "UN_1_ITA"
+		text = "UN_DELL"
+		desc = "Советник не будет доступен"
+		allow_achievements = yes
+	}	
+}
+sov_closed_eco = {
+	name = "SOV_CLOSED_ECO"
+	group = "government_setting_ec"
+	icon = GFX_UNM
+
+	option = {	
+		name = yes
+		text = "SOV_CLOSED_ECO_YES"
+		desc = "SOV_CLOSED_ECO_YES_DC"
+		allow_achievements = yes
+	}
+	default = {
+	    name = no
+		text = "SOV_CLOSED_ECO_NO"	
+		desc = "UN_NO_CHANGES"
+		allow_achievements = yes
+	}
+}
+ger_industrial_complex_unm = {
+	name = "GER_SETTING"
+	group = "government_setting_ec"
+	icon = GFX_UNM
+
+	option = {	
+	    name = ger_5
+		text = "GER_INDUSTRIAL_5"	
+		desc = "GER_INDUSTRIAL_5_DC"
+		allow_achievements = yes
+	}
+	option = {
+	    name = ger_7
+		text = "GER_INDUSTRIAL_7"	
+		desc = "GER_INDUSTRIAL_7_DC"
+		allow_achievements = yes
+	}
+	default = {
+	    name = ger_10
+		text = "GER_INDUSTRIAL_10"	
+		desc = "GER_INDUSTRIAL_10_DC"
+		allow_achievements = yes
+	}
+	option = {
+		name = ger_0
+		text = "GER_INDUSTRIAL_VANILLA"
+		desc = "UN_NO_CHANGES"
+		allow_achievements = yes
+	}
+}
+jap_closed_eco = {
+	name = "JAP_CLOSED_ECO"
+	group = "government_setting_ec"
+	icon = GFX_UNM
+
+	option = {
+	    name = r_slot
+		text = "JAP_SLOT"	
+		desc = "JA_SLOT_DC"
+		allow_achievements = yes
+	}
+	default = {	
+		name = yes
+		text = "JAP_CLOSED_ECO_YES"
+		desc = "JAP_CLOSED_ECO_YES_DC"
+		allow_achievements = yes
+	}
+	option = {
+	    name = no
+		text = "JAP_CLOSED_ECO_NO"	
+		desc = "UN_NO_CHANGES"
+		allow_achievements = yes
+	}
+}
+
+jap_resource_aluminium = {
+	name = "jap_resource_aluminium"
+	group = "setting_resources"
+	icon = GFX_UNM
+	option = {
+	    name = no
+		text = "UN_VANILLA"	
+		desc = "UN_NO_CHANGES"
+		allow_achievements = yes
+	}
+	option = {
+	    name = aluminium_20
+		text = "aluminium_20_unm"	
+		desc = "aluminium_20_dc"
+		allow_achievements = yes
+	}
+	option = {
+	    name = aluminium_25
+		text = "aluminium_25_unm"	
+		desc = "aluminium_25_dc"
+		allow_achievements = yes
+	}
+	default = {	
+	    name = aluminium_30
+		text = "aluminium_30_unm"	
+		desc = "aluminium_30_dc"
+		allow_achievements = yes
+	}
+	option = {
+		name = aluminium_35
+		text = "aluminium_35_unm"
+		desc = "aluminium_35_dc"
+		allow_achievements = yes
+	}
+	option = {
+	    name = aluminium_40
+		text = "aluminium_40_unm"	
+		desc = "aluminium_40_dc"
+		allow_achievements = yes
+	}
+}
+jap_resource_steel = {
+	name = "jap_resource_steel"
+	group = "setting_resources"
+	icon = GFX_UNM
+	option = {
+	    name = no
+		text = "UN_VANILLA"	
+		desc = "UN_NO_CHANGES"
+		allow_achievements = yes
+	}
+	option = {
+	    name = steel_20
+		text = "steel_20_unm"	
+		desc = "steel_20_dc"
+		allow_achievements = yes
+	}
+	option = {
+	    name = steel_25
+		text = "steel_25_unm"	
+		desc = "steel_25_dc"
+		allow_achievements = yes
+	}
+	option = {
+	    name = steel_30
+		text = "steel_30_unm"	
+		desc = "steel_30_dc"
+		allow_achievements = yes
+	}
+	default = {	
+		name = steel_35
+		text = "steel_35_unm"
+		desc = "steel_35_dc"
+		allow_achievements = yes
+	}
+	option = {
+	    name = steel_40
+		text = "steel_40_unm"	
+		desc = "steel_40_dc"
+		allow_achievements = yes
+	}
+}
+jap_resource_oil = {
+	name = "jap_resource_oil"
+	group = "setting_resources"
+	icon = GFX_UNM
+	option = {
+	    name = no
+		text = "UN_VANILLA"	
+		desc = "UN_NO_CHANGES"
+		allow_achievements = yes
+	}
+	option = {
+	    name = oil_20
+		text = "oil_20_unm"	
+		desc = "oil_20_dc"
+		allow_achievements = yes
+	}
+	default = {
+	    name = oil_25
+		text = "oil_25_unm"	
+		desc = "oil_25_dc"
+		allow_achievements = yes
+	}
+	option = {	
+	    name = oil_30
+		text = "oil_30_unm"	
+		desc = "oil_30_dc"
+		allow_achievements = yes
+	}
+	option = {
+		name = oil_35
+		text = "oil_35_unm"
+		desc = "oil_35_dc"
+		allow_achievements = yes
+	}
+	option = {
+	    name = oil_40
+		text = "oil_40_unm"	
+		desc = "oil_40_dc"
+		allow_achievements = yes
+	}
+}
+kb_un_1_ita = {
+	
+	name  ="KB_UN_1_ITA"
+	group ="UN_KB_ROMGROUP"
+	icon  ="GFX_UN"
+	
+	option = {
+		name = "KB_ITA_CRDA"
+		text = "UN_DELL"
+		desc = "КБ не будет доступен"
+		allow_achievements = yes
+	}
+	default = {
+		name = "KB_ITA_CRDA_FREE"
+		text = "UN_YES"
+		desc = "Без изменений"
+		allow_achievements = yes
+	}	
+}
+
+kb_un_2_ita = {
+	
+	name  ="KB_UN_2_ITA"
+	group ="UN_KB_ROMGROUP"
+	icon  ="GFX_UN"
+	
+	option = {
+		name = "KB_ITA_FM"
+		text = "UN_DELL"
+		desc = "КБ не будет доступен"
+		allow_achievements = yes
+	}
+	default = {
+		name = "KB_ITA_FM_FREE"
+		text = "UN_YES"
+		desc = "Без изменений"
+		allow_achievements = yes
+	}	
+}
+
+kb_un_1_ROM = {
+	
+	name  ="KB_UN_1_ROM"
+	group ="UN_KB_ROMGROUP"
+	icon  ="GFX_UN"
+	
+	option = {
+		name = "KB_UN_2_LO"
+		text = "Старое КБ"
+		desc = "Старое КБ для Румынии будет доступно. (Танк)"
+		allow_achievements = yes
+	}
+	default = {
+		name = "KB_UN_1_LO_FREE"
+		text = "Новое КБ"
+		desc = "Новое КБ для Румынии будет доступно. (Танк)"
+		allow_achievements = yes
+	}	
+}
+
+bismarck_class_un_un = {
+	
+	name  = "BISMARCK_CLASS_UN_UN"
+	group = "HMM_FOCUSGROUP"
+	icon = "GFX_UN"
+	
+	option = {
+		name = "BM_GER_CLASS_FREE"
+		text = "UN_DELL"
+		desc = "Без изменений"
+		allow_achievements = yes
+	}
+	option = {
+		name = "UN_GERBMUN"
+		text = "1939"
+		desc = "Будет доступен фокус на Bismarck в 1939"
+		allow_achievements = yes
+	}	
+	default = {
+		name = "UN_GERBM"
+		text = "1941"
+		desc = "Будет доступен фокус на Bismarck в 1941"
+		allow_achievements = yes
+	}	
+}
+
+aquila_class_un = {
+	
+	name  = "AQUILA_CLASS_UN"
+	group = "HMM_FOCUSGROUP"
+	icon = "GFX_UN"
+	
+	default = {
+		name = "AQ_ITA_CLASS_FREE"
+		text = "UN_DELL"
+		desc = "Без изменений"
+		allow_achievements = yes
+	}
+	option = {
+		name = "UN_ITA_UN"
+		text = "UN_YES"
+		desc = "Будет доступен фокус на Aquila"
+		allow_achievements = yes
+	}	
+}
+
+un_tech_slot = {
+	
+	name  = "UN_TECH_SLOT"
+	group = "HMM_FOCUSGROUP"
+	icon = "GFX_UN"
+	
+	option = {
+		name = "UN_TECH_SLOT_NO"
+		text = "UN_DELL"
+		desc = "Без изменений"
+		allow_achievements = yes
+	}
+	default = {
+		name = "UN_TECH_SLOT_1"
+		text = "UN_YES"
+		desc = "Фокус доступен"
+		allow_achievements = yes
+	}	
+}
+un_uk_focus_on = {
+	
+	name  ="UN_UK_FOCUS_ON"
+	group ="HMM_FOCUSGROUP"
+	icon  ="GFX_UN"
+	
+	option = {
+		name = "UN_UK_NO"
+		text = "Запрещено"
+		desc = "Фокус не будет доступен"
+		allow_achievements = yes
+	}
+	default = {
+		name = "UN_UK_FREE"
+		text = "UN_YES"
+		desc = "UN_NO_CHANGES"
+		allow_achievements = yes
+	}	
+}
+hmm_ita_grind = {
+	
+	name  ="HMM_ITA_GRIND"
+	group ="HMM_GROUPKEY"
+	icon  ="GFX_UN"
+	
+	option = {
+		name = "HMM_ITA_GRIND_FREE"
+		text = "Ваниль"
+		desc = "UN_NO_CHANGES"
+		allow_achievements = yes
+	}
+	default = {
+		name = "HMM_ITA_6MONTH"
+		text = "Правила ООН"
+		desc = "6 Month to grind before Annexation Event"
+		allow_achievements = yes
+	}	
+}
+
+un_sov_grind = {
+	
+	name  ="UN_SOV_GRIND"
+	group ="HMM_GROUPKEY"
+	icon  ="GFX_UN"
+	
+	option = {
+		name = "UN_SOV_GRIND_FREE"
+		text = "Ваниль"
+		desc = "UN_NO_CHANGES"
+		allow_achievements = yes
+	}
+	option = {
+		name = "UN_SOV_GRIND_NO_TER"
+		text = "Мир без территории"
+		desc = "Советский Союз не получит территории Финляндии после заключения мира."
+		allow_achievements = yes
+	}
+	default = {
+		name = "UN_SOV_6MONTH"
+		text = "Мир с территориями"
+		desc = "Советский Союз получит территории Финляндии после заключения мира."
+		allow_achievements = yes
+	}	
+}
+
+hmm_fra_vichy = {
+
+	name  = "HMM_FRA_VICHY"
+	group = "HMM_GROUPKEY"
+	icon  = "GFX_UN"
+
+	option = {
+		name = "HMM_FRA_VICHY_YES"
+		text = "UN_VANILLA"
+		desc = "VICHY_YES_UN"
+		allow_achievements = yes
+	}
+	default = {
+		name = "HMM_FRA_VICHY_NO"
+		text = "Без Вишистской Франции"
+		desc = "VICHY_NO_UN"
+		allow_achievements = yes
+	}	
+}
+## Equipment
+ ###################################################
+ ###################################################
+ ###################################################
+
+hmm_allow_mines = {
+
+	name  ="HMM_ALLOW_MINES"
+	group ="HMM_EQGROUP"
+	icon  ="GFX_UN"
+
+	option = {
+		name = "HMM_MINES_FREE"
+		text = "UN_VANILLA"
+		desc = "UN_NO_CHANGES"
+		allow_achievements = yes
+	}			
+	default = {
+		name = "HMM_BANN_MINES"
+		text = "UN_NO"
+		desc = "No Minelaying technology available"
+		allow_achievements = yes
+	}
+}
+
+hmm_allow_fighter = {
+
+	name  ="HMM_ALLOW_FIGHTER"
+	group ="HMM_EQGROUP"
+	icon  ="GFX_UN"
+	
+	default = {
+		name = "HMM_FREE_FIGHTER3"
+		text = "UN_VANILLA"
+		desc = "UN_NO_CHANGES"
+		allow_achievements = yes
+	}
+	option = {
+		name = "HMM_FIGHTER3_BANNED"
+		text = "No F3s"
+		desc = "Fighter 3s (1944) are banned"
+		allow_achievements = yes
+	}	
+}	
+
+
+hmm_allow_strats = {
+
+	name  ="HMM_ALLOW_STRATS"
+	group ="HMM_EQGROUP"
+	icon  ="GFX_UN"
+		
+	default = {
+		name = "HMM_FREE_STRATS"
+		text = "UN_VANILLA"
+		desc = "UN_NO_CHANGES"
+		allow_achievements = yes
+	}
+	option = {
+		name = "HMM_STRAT_1s"
+		text = "1936s"
+		desc = "Only 1936 Strat Bombers are allowed"
+		allow_achievements = yes
+	}	
+	option = {
+		name = "HMM_STRAT_2s"
+		text = "1940s"
+		desc = "Strat Bomber 3s (1944) are banned"
+		allow_achievements = yes
+	}
+	option = {
+		name = "HMM_STRAT_BANNED"
+		text = "UN_NO"
+		desc = "All Strat Bombers are banned"
+		allow_achievements = yes
+	}		
+}
+
+equipment_conversion_un = {
+	
+	name  ="EQUIPMENT_CONVERSION_UN"
+	group ="HMM_EQGROUP"
+	icon  ="GFX_UN"
+	
+	option = {
+	name = "CONVERSION_UN_Y"
+	text = "Разрешено"
+	desc = "Улучшенная доработка снаряжения будет доступна для изучения."
+	}
+	default = {
+		name = "CONVERSION_UN_N"
+		text = "Запрещено"
+		desc = "Улучшенная доработка снаряжения не будет доступна для изучения."
+	}	
+}
+
+hmm_allow_subs = {
+
+	name  ="HMM_ALLOW_SUBS"
+	group ="HMM_EQGROUP"
+	icon  ="GFX_UN"
+	
+	option = {
+		name = "HMM_FREE_SUBS"
+		text = "UN_VANILLA"
+		desc = "UN_NO_CHANGES"
+		allow_achievements = yes
+	}
+	option = {
+		name = "HMM_SUBS3_BANNED"
+		text = "1936"
+		desc = "No Submarine 1940 Technology"
+		allow_achievements = yes
+	}	
+	default = {
+		name = "HMM_SUBS4_BANNED"
+		text = "1940"
+		desc = "No Submarine 1944 Technology"
+		allow_achievements = yes
+	}	
+}
+
+ ###################################################
+ ###################################################
+ ###################################################
+
+hmm_allow_nukes = {
+	
+	name  = "HMM_ALLOW_NUKES"
+	group = "HMM_EQGROUP"
+	icon  = "GFX_UN"
+	
+	default = {
+		name = "HMM_FREE_NUKES"
+		text = "Ваниль"
+		desc = "UN_NO_CHANGES"
+		allow_achievements = yes
+	}
+	option = {
+		name = "HMM_NUKES_BANNED"
+		text = "Запрещено"
+		desc = "Atomic Bombs are not researchable"
+		allow_achievements = yes
+	}
+}
+
+ ###################################################
+ ###################################################
+ ###################################################
+
+hmm_allow_adaptable = {
+
+	name  ="HMM_ALLOW_ADAPTABLE"
+	group ="UN_ABILITIES"
+	icon  ="GFX_UN"
+
+	default = {
+		name = "HMM_DISABLE_ADAPTABLE"
+		text = "UN_DELL"
+		desc = "Adaptable is Banned"
+		allow_achievements = yes
+	}		
+	option = {
+		name = "HMM_ENABLE_ADAPTABLE"
+		text = "UN_VANILLA"
+		desc = "UN_NO_CHANGES"
+		allow_achievements = yes
+	}
+}
+
+################# abilities #################
+un_allow_attack = {
+
+	name  ="UN_ALLOW_ATTACK"
+	group ="UN_ABILITIES"
+	icon  ="GFX_UN"
+	option = {
+		name = "UN_FREE_ATTACK"
+		text = "UN_VANILLA"
+		desc = "UN_NO_CHANGES"
+		allow_achievements = yes
+	}
+	default = {
+		name = "UN_ATTACK_BANNED"
+		text = "UN_DELL"
+		desc = "NO_DEL_ABILITIES_D"
+		allow_achievements = yes
+	}
+}
+un_allow_stand = {
+
+	name  ="UN_ALLOW_STAND"
+	group ="UN_ABILITIES"
+	icon  ="GFX_UN"
+	option = {
+		name = "UN_FREE_STAND"
+		text = "UN_VANILLA"
+		desc = "UN_NO_CHANGES"
+		allow_achievements = yes
+	}
+	default = {
+		name = "UN_STAND_BANNED"
+		text = "UN_DELL"
+		desc = "NO_DEL_ABILITIES_D"
+		allow_achievements = yes
+	}
+}
+un_allow_plan = {
+
+	name  ="UN_ALLOW_PLAN"
+	group ="UN_ABILITIES"
+	icon  ="GFX_UN"
+	default = {
+		name = "UN_FREE_PLAN"
+		text = "UN_VANILLA"
+		desc = "UN_NO_CHANGES"
+		allow_achievements = yes
+	}
+	option = {
+		name = "UN_PLAN_BANNED"
+		text = "UN_DELL"
+		desc = "NO_DEL_ABILITIES_D"
+		allow_achievements = yes
+	}
+}
+un_allow_makeshift_bridges = {
+
+	name  ="UN_ALLOW_MAKESHIFT_BRIDGES"
+	group ="UN_ABILITIES"
+	icon  ="GFX_UN"
+	default = {
+		name = "UN_FREE_BRIDGES"
+		text = "UN_VANILLA"
+		desc = "UN_NO_CHANGES"
+		allow_achievements = yes
+	}
+	option = {
+		name = "UN_BRIDGES_BANNED"
+		text = "UN_DELL"
+		desc = "NO_DEL_ABILITIES_D"
+		allow_achievements = yes
+	}
+}
+
+## Spys
+
+hmm_ibps = {
+
+	name  ="HMM_IBPS"
+	group ="HMM_SPYGROUP"
+	icon  ="GFX_UN"
+	
+	default = {
+		name = "HMM_IBPS_BANNED"
+		text = "Запрещено"
+		desc = "Запрещено"
+		allow_achievements = yes
+	}		
+	option = {
+		name = "HMM_IBPS_VANILLA"
+		text = "Ваниль"
+		desc = "No Changes"
+		allow_achievements = yes
+	}
+	option = {
+		name = "HMM_IBPS_RULESET"
+		text = "100%"
+		desc = "max 100% Research Bonus outcome"
+		allow_achievements = yes
+	}
+}
+
+hmm_tbps = {
+
+	name  ="HMM_TBPS"
+	group ="HMM_SPYGROUP"
+	icon  ="GFX_UN"
+
+	default = {
+		name = "HMM_TBPS_BANNED"
+		text = "Запрещено"
+		desc = "Запрещено"
+		allow_achievements = yes
+	}	
+	option = {
+		name = "HMM_TBPS_VANILLA"
+		text = "Ваниль"
+		desc = "UN_NO_CHANGES"
+		allow_achievements = yes
+	}
+} 
+############### defaults below
+
+
 allow_wargoals = {
 	name = "RULE_ALLOW_WARGOALS"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
@@ -101,7 +819,7 @@ allow_release_nations = {
 	name = "RULE_ALLOW_RELEASE_NATIONS"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
 	icon = "GFX_release_nations"
-	default = {
+	option = {
 		name = "FREE"
 		text = RULE_OPTION_FREE
 		desc = "RULE_ALLOW_RELEASE_NATIONS_FREE_DESC"
@@ -111,7 +829,7 @@ allow_release_nations = {
 		text = "RULE_OPTION_PEACE_ONLY"
 		desc = "RULE_ALLOW_RELEASE_NATIONS_PEACE_ONLY_DESC"
 	}
-	option = {
+	default = {
 		name = "BLOCKED"
 		text = RULE_OPTION_BLOCKED
 		desc = "RULE_ALLOW_RELEASE_NATIONS_BLOCKED_DESC"
@@ -260,22 +978,6 @@ allow_leave_faction = {
 	}
 }
 
-allow_kick_game = {
-	name = "RULE_ALLOW_HIST_RULES"
-	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
-	icon = "GFX_leave_faction"
-	default = {
-		name = "ALLOWED"
-		text = "RULE_OPTION_ALLOWED"
-		desc = "RULE_ALLOW_HIST_RULES_ALLOWED_DESC"
-	}
-	option = {
-		name = "BLOCKED"
-		text = "RULE_OPTION_BLOCKED"
-		desc = "RULE_ALLOW_HIST_RULES_BLOCKED_DESC"
-	}
-}
-
 allow_kick_faction = {
 	name = "RULE_ALLOW_KICK_FACTION"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
@@ -330,7 +1032,7 @@ allow_coups = {
 		desc = "RULE_ALLOW_COUPS_AI_ONLY_DESC"
 		allow_achievements = yes
 	}
-	option = {
+	default = {
 		name = BLOCKED
 		text = "RULE_OPTION_BLOCKED"
 		desc = "RULE_ALLOW_COUPS_BLOCKED_DESC"
@@ -357,7 +1059,7 @@ allow_party_boosting = {
 		text = "RULE_OPTION_PLAYER_ONLY"
 		desc = "RULE_ALLOW_PARTY_BOOSTING_PLAYER_ONLY_DESC"
 	}
-	option = {
+	default = {
 		name = BLOCKED
 		text = "RULE_OPTION_BLOCKED"
 		desc = "RULE_ALLOW_PARTY_BOOSTING_BLOCKED_DESC"
@@ -380,7 +1082,7 @@ allow_paratroopers = {
 		text = "RULE_OPTION_ALLOWED"
 		desc = "RULE_ALLOW_PARATROOPERS_ALLOWED_DESC"
 	}
-	option = {
+	default = {
 		name = no
 		text = "RULE_OPTION_BLOCKED"
 		desc = "RULE_ALLOW_PARATROOPERS_BLOCKED_DESC"

@@ -2,7 +2,11 @@
 
 oob = "IRE_1936"
 
-set_research_slots = 3
+set_research_slots = 0
+
+add_ideas = {
+	neutral_idea_un
+}
 
 set_technology = {
 	infantry_weapons = 1

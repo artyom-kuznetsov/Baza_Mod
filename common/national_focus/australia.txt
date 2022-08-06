@@ -343,7 +343,7 @@
 		y = 4
 		relative_position_id = AST_additional_militia_training
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -616,7 +616,7 @@
 		icon = GFX_goal_generic_build_airforce
 		x = 7
 		y = 0
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -729,7 +729,7 @@
 		y = 2
 		relative_position_id = AST_expand_the_raaf
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -847,7 +847,7 @@
 
 		x = -1
 		y = 3
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1082,7 +1082,7 @@
 		y = 5
 		relative_position_id = AST_expand_the_raaf
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1234,7 +1234,7 @@
 		y = 4
 		relative_position_id = AST_expand_the_raaf
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1269,7 +1269,7 @@
 		y = 5
 		relative_position_id = AST_expand_the_raaf
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1567,7 +1567,7 @@
 		y = 3
 		relative_position_id = AST_cockatoo_island_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1679,7 +1679,7 @@
 		x = 14
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
@@ -1742,13 +1742,13 @@
 	focus = {
 		id = AST_western_australian_government_railways
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = AST_standard_gauge_railway }
-		prerequisite = { focus = AST_industries_assistance_corporation }
+		prerequisite = { focus = AST_standard_gauge_railway focus = AST_industries_assistance_corporation}
+		prerequisite = { focus = AST_industries_assistance_corporation focus = AST_standard_gauge_railway }
 		x = 1
 		y = 1
 		relative_position_id = AST_standard_gauge_railway
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -1785,7 +1785,7 @@
 		y = 2
 		relative_position_id = AST_standard_gauge_railway
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -1848,7 +1848,7 @@
 		y = 2
 		relative_position_id = AST_standard_gauge_railway
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -1872,10 +1872,10 @@
 				limit = {
 					has_state_flag = AST_department_of_supply_and_development_AF
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1892,10 +1892,10 @@
 					}
 					NOT = { state = 674 }
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 21
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = AST_department_of_supply_and_development_AF
@@ -1911,7 +1911,7 @@
 		y = 3
 		relative_position_id = AST_standard_gauge_railway
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -1970,7 +1970,6 @@
 		id = AST_allied_works_council
 		icon = GFX_goal_generic_production2
 		prerequisite = { focus = AST_department_of_supply_and_development }
-		prerequisite = { focus = AST_civil_construction_corps }
 		x = 2
 		y = 3
 		relative_position_id = AST_standard_gauge_railway
@@ -2067,7 +2066,7 @@
 		y = 4
 		relative_position_id = AST_standard_gauge_railway
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2102,7 +2101,7 @@
 		y = 4
 		relative_position_id = AST_standard_gauge_railway
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2122,7 +2121,14 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			add_ideas = AST_australian_arms_production
+			518 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -2209,7 +2215,7 @@
 		y = 1
 		relative_position_id = AST_establish_advisory_war_council
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 8
@@ -2244,7 +2250,7 @@
 		y = 1
 		relative_position_id = AST_establish_advisory_war_council
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2374,7 +2380,7 @@
 		y = 2
 		relative_position_id = AST_establish_advisory_war_council
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2406,7 +2412,7 @@
 		y = 2
 		relative_position_id = AST_establish_advisory_war_council
 
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
@@ -2545,7 +2551,7 @@
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = AST_civil_construction_corps }
 		prerequisite = { focus = AST_squash_the_squanderbugs }
-		x = -3
+		x = -4
 		y = 4
 		relative_position_id = AST_establish_advisory_war_council
 
@@ -2607,7 +2613,6 @@
 		}
 
 		available = {
-			is_subject = no
 			has_war = yes
 			is_in_faction = yes
 			OR = {
@@ -2746,7 +2751,7 @@
 		y = 3
 		relative_position_id = AST_establish_advisory_war_council
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2822,10 +2827,6 @@
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-			is_subject = no
-		}
 		
 		bypass = {
 
@@ -2852,7 +2853,7 @@
 		x = 28
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2912,7 +2913,7 @@
 		x = -1
 		y = 1
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2975,7 +2976,7 @@
 		y = 1
 		relative_position_id = AST_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 0.2
@@ -3116,7 +3117,7 @@
 		y = 3
 		relative_position_id = AST_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3341,7 +3342,9 @@
 		y = 0
 
 		cost = 10
-
+		allow_branch = {
+			date > 1966.5.1
+		}
 		ai_will_do = {
 			factor = 0.5 
 			modifier = {
@@ -4829,8 +4832,4 @@
 			}
 		}
 	}
-
-
-
-
-}		
+}

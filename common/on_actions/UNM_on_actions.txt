@@ -1,0 +1,137 @@
+on_actions = {
+    on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = { rule = sov_closed_eco option = yes }
+				}
+				SOV = { add_ideas = UNM_sov_closed_eco }
+				SOV = { add_offsite_building = { type = industrial_complex level = 7 } }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_closed_eco option = yes }
+				}
+				JAP = { add_ideas = UNM_jap_closed_eco }
+				JAP = { add_research_slot = 1 }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_closed_eco option = r_slot }
+				}
+				JAP = { add_research_slot = 1 }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ger_industrial_complex_unm option = ger_5 }
+				}
+				GER = { add_offsite_building = { type = industrial_complex level = 5 } }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ger_industrial_complex_unm option = ger_7 }
+				}
+				GER = { add_offsite_building = { type = industrial_complex level = 7 } }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ger_industrial_complex_unm option = ger_10 }
+				}
+				GER = { add_offsite_building = { type = industrial_complex level = 10 } }
+			}
+			#################################################################################
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_resource_aluminium option =  aluminium_20 }
+				}
+				JAP = { 529= { add_resource = { type = aluminium amount = 20 } } }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_resource_aluminium option =  aluminium_25 }
+				}
+				JAP = { 529= { add_resource = { type = aluminium amount = 25 } } }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_resource_aluminium option =  aluminium_30 }
+				}
+				JAP = { 529= { add_resource = { type = aluminium amount = 30 } } }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_resource_aluminium option =  aluminium_35 }
+				}
+				JAP = { 529= { add_resource = { type = aluminium amount = 35 } } }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_resource_aluminium option =  aluminium_40 }
+				}
+				JAP = { 529= { add_resource = { type = aluminium amount = 40 } } }
+			}
+			#################################################################################
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_resource_oil option =  oil_20 }
+				}
+				JAP = { 282= { add_resource = { type = oil amount = 20 } } }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_resource_oil option =  oil_25 }
+				}
+				JAP = { 282= { add_resource = { type = oil amount = 25 } } }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_resource_oil option =  oil_30 }
+				}
+				JAP = { 282= { add_resource = { type = oil amount = 30 } } }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_resource_oil option =  oil_35 }
+				}
+				JAP = { 282= { add_resource = { type = oil amount = 35 } } }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_resource_oil option =  oil_40 }
+				}
+				JAP = { 282= { add_resource = { type = oil amount = 40 } } }
+			}
+			#################################################################################
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_resource_steel option =  steel_20 }
+				}
+				JAP = { 531= { add_resource = { type = steel amount = 20 } } }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_resource_steel option =  steel_25 }
+				}
+				JAP = { 531= { add_resource = { type = steel amount = 25 } } }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_resource_steel option =  steel_30 }
+				}
+				JAP = { 531= { add_resource = { type = steel amount = 30 } } }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_resource_steel option =  steel_35 }
+				}
+				JAP = { 531= { add_resource = { type = steel amount = 35 } } }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_resource_steel option =  steel_40 }
+				}
+				JAP = { 531= { add_resource = { type = steel amount = 40 } } }
+			}
+		}
+	}
+}

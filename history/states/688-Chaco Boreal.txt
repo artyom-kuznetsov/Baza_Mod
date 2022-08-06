@@ -1,27 +1,14 @@
 state={
 	id=688
 	name="STATE_688"
-	manpower = 45900
+	manpower = 1
 	
-	state_category = pastoral
-	
-	resources={
-		tungsten=15 # was: 4
-		steel=10 # was: 2
-	}
+	state_category = wasteland
 
 	history={
-		owner = PAR
-		buildings = {
-			infrastructure = 1
-		}
-		add_core_of = PAR
-		add_core_of = BOL
 	}
 	
 	provinces={
 		2195 2209 5165 8203 10973 
 	}
-
-	local_supplies=0.0 
 }

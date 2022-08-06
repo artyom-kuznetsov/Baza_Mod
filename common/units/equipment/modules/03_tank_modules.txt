@@ -1,0 +1,46 @@
+equipment_modules = {
+	tank_una_one_man_tank_turret = {
+		abbreviation = "l1m"
+		category = tank_una_turret_type
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 0.5
+			breakthrough = 7
+		}
+		multiply_stats = {
+			
+		}
+
+	}
+
+	tank_una_two_man_tank_turret = {
+		abbreviation = "l2m"
+		category = tank_una_turret_type
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 0.75
+			breakthrough = 10
+		}
+		multiply_stats = {
+			
+		}
+
+	}
+
+	tank_una_three_man_tank_turret = {
+		abbreviation = "l3m"
+		category = tank_una_turret_type
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 1
+			maximum_speed = -0.25
+			breakthrough = 14
+		}
+		multiply_stats = {
+			
+		}
+	}
+}

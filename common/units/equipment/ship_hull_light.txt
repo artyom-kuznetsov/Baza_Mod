@@ -112,7 +112,7 @@ equipments = {
 		
 		build_cost_ic = 400
 		resources = {
-			steel = 10
+			steel = 2
 		}
 		
 		manpower = 250
@@ -172,7 +172,7 @@ equipments = {
 		max_strength = 40
 		build_cost_ic = 500
 		resources = {
-			steel = 10
+			steel = 2
 		}
 		manpower = 325
 	}
@@ -228,7 +228,7 @@ equipments = {
 
 		
 		resources = {
-			steel = 15
+			steel = 3
 		}
 
 		surface_detection = 20
@@ -302,7 +302,7 @@ equipments = {
 		max_strength = 60
 		build_cost_ic = 600
 		resources = {
-			steel = 20
+			steel = 4
 			chromium = 1
 		}
 		manpower = 500
@@ -350,7 +350,7 @@ equipments = {
 		build_cost_ic = 400
 		resources = {
 			#oil = 1
-			steel = 10
+			steel = 2
 		}
 		
 		manpower = 250
@@ -402,7 +402,7 @@ equipments = {
 		build_cost_ic = 500
 		resources = {
 			#oil = 1
-			steel = 15
+			steel = 3
 		}		
 		manpower = 325
 	}
@@ -453,7 +453,7 @@ equipments = {
 		build_cost_ic = 500
 		resources = {
 			#oil = 2
-			steel = 15
+			steel = 3
 		}
 		manpower = 400
 	}
@@ -505,7 +505,7 @@ equipments = {
 		build_cost_ic = 500
 		resources = {
 			#oil = 2
-			steel = 20
+			steel = 4
 			chromium = 1
 		}		
 		manpower = 500

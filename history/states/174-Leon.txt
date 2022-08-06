@@ -3,7 +3,8 @@ state={
 	name="STATE_174"
 
 	resources={
-		tungsten=50.000
+		tungsten=210
+		chromium=20
 	}
 	history={
 		owner = SPR

@@ -30,6 +30,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		allow_branch = {
+			date > 1966.5.1
+		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			#activate_mission = POL_four_year_plan_mission
@@ -1255,7 +1258,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
-
+		allow_branch = {
+			date > 1966.5.1
+		}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -1892,21 +1897,7 @@ focus_tree = {
 		}
 		
 		allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					OR = {
-						has_completed_focus = POL_organize_the_peasants_strike
-						has_completed_focus = POL_nationalist_constitution
-						has_completed_focus = POL_assemble_the_regency_council
-					}
-				}
-			}
+			date > 1966.5.1
 		}
 		available = { is_subject = no }
 
@@ -4441,21 +4432,7 @@ focus_tree = {
 		cost = 5
 		mutually_exclusive = { focus = POL_polish_revanchism focus = POL_baltic_security }
 		allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					OR = {
-						has_completed_focus = POL_organize_the_peasants_strike
-						has_completed_focus = POL_assemble_the_regency_council
-						has_completed_focus = POL_nationalist_constitution
-					}
-				}
-			}
+			date > 1966.5.1
 		}
 
 		ai_will_do = {
@@ -4879,7 +4856,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 2.5
 		}
-
+		allow_branch = {
+			date > 1966.5.1
+		}
 		available_if_capitulated = yes
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -4901,7 +4880,9 @@ focus_tree = {
 	focus = {
 		id = POL_organize_the_peasants_strike
 		icon = GFX_goal_generic_war_with_comintern
-		allow_branch = { has_dlc = "No Step Back" }
+		allow_branch = {
+			date > 1966.5.1
+		}
 		
 		mutually_exclusive = { focus = POL_complete_april_constitution focus = POL_assemble_the_regency_council focus = POL_nationalist_constitution }
 
@@ -6964,22 +6945,7 @@ focus_tree = {
 		relative_position_id = POL_raise_the_black_madonna
 		mutually_exclusive = { focus = POL_KPP_focus }
 		allow_branch = {
-			has_dlc = "No Step Back"
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					OR = {
-						has_completed_focus = POL_complete_april_constitution
-						has_completed_focus = POL_assemble_the_regency_council
-						has_completed_focus = POL_nationalist_constitution
-					}
-				}
-			}
+			date > 1966.5.1
 		}
 
 		available = {
@@ -7341,7 +7307,9 @@ focus_tree = {
 	focus = {
 		id = POL_assemble_the_regency_council
 		icon = GFX_focus_generic_monarchy_2
-		allow_branch = { has_dlc = "No Step Back" }
+		allow_branch = {
+			date > 1966.5.1
+		}
 		mutually_exclusive = { focus = POL_complete_april_constitution focus = POL_organize_the_peasants_strike focus = POL_nationalist_constitution }
 		
 		available = {
@@ -8143,7 +8111,6 @@ focus_tree = {
 		relative_position_id = POL_royal_officer_corps
 		
 		mutually_exclusive = { focus = POL_align_with_habsburgs }
-
 		x = -1
 		y = 1
 		cost = 10
@@ -8499,17 +8466,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			effect_tooltip = {
-				create_country_leader = {
-					name = "Michał II"
-					desc = "POLITICS_MICHAEL_I_DESC"
-					picture = GFX_portrait_Michał_II
-					expire = "1965.1.1"
-					ideology = despotism
-					traits = {
-					}
-				}
-			}
 		}
 	}
 
@@ -8689,23 +8645,7 @@ focus_tree = {
 		}
 		
 		allow_branch = {
-			has_dlc = "No Step Back"
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					OR = {
-						has_completed_focus = POL_organize_the_peasants_strike
-						has_completed_focus = POL_restore_the_sejm
-						has_completed_focus = POL_complete_april_constitution
-						has_completed_focus = POL_nationalist_constitution
-					}
-				}
-			}
+			date > 1966.5.1
 		}
 
 		available_if_capitulated = no
@@ -9107,23 +9047,7 @@ focus_tree = {
 		relative_position_id = POL_assert_western_claims
 		
 		allow_branch = {
-			has_dlc = "No Step Back"
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					OR = {
-						has_completed_focus = POL_organize_the_peasants_strike
-						has_completed_focus = POL_restore_the_sejm
-						has_completed_focus = POL_complete_april_constitution
-						has_completed_focus = POL_nationalist_constitution
-					}
-				}
-			}
+			date > 1966.5.1
 		}
 
 		x = 0
@@ -10980,7 +10904,9 @@ focus_tree = {
 	focus = {
 		id = POL_nationalist_constitution
 		icon = GFX_goal_support_fascism
-		allow_branch = { has_dlc = "No Step Back" }
+		allow_branch = {
+			date > 1966.5.1
+		}
 
 		available = {
 			
@@ -11396,23 +11322,7 @@ focus_tree = {
 		prerequisite = { focus = POL_divide_lit focus = POL_seek_german_alignment }
 		mutually_exclusive = { focus = POL_konfederacja_narodu }
 		allow_branch = {
-			has_dlc = "No Step Back"
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					OR = {
-						has_completed_focus = POL_complete_april_constitution
-						has_completed_focus = POL_organize_the_peasants_strike
-						has_completed_focus = POL_restore_the_sejm
-
-					}
-				}
-			}
+			date > 1966.5.1
 		}
 
 		x = 87
@@ -11473,22 +11383,7 @@ focus_tree = {
 		prerequisite = { focus = POL_divide_lit focus = POL_seek_german_alignment focus = POL_support_global_falangism }
 		mutually_exclusive = { focus = POL_german_training }
 		allow_branch = {
-			has_dlc = "No Step Back"
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					OR = {
-						has_completed_focus = POL_complete_april_constitution
-						has_completed_focus = POL_organize_the_peasants_strike
-						has_completed_focus = POL_restore_the_sejm
-					}
-				}
-			}
+			date > 1966.5.1
 		}
 
 		x = 89
@@ -12618,22 +12513,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		allow_branch = {
-			has_dlc = "No Step Back"
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					OR = {
-						has_completed_focus = POL_complete_april_constitution
-						has_completed_focus = POL_organize_the_peasants_strike
-						has_completed_focus = POL_restore_the_sejm
-					}
-				}
-			}
+			date > 1966.5.1
 		}
 		
 		offset = {
@@ -12669,22 +12549,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		allow_branch = {
-			has_dlc = "No Step Back"
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					OR = {
-						has_completed_focus = POL_complete_april_constitution
-						has_completed_focus = POL_organize_the_peasants_strike
-						has_completed_focus = POL_restore_the_sejm
-					}
-				}
-			}
+			date > 1966.5.1
 		}
 		
 		offset = {
@@ -13078,6 +12943,9 @@ focus_tree = {
 	focus = {
 		id = POL_the_between_the_seas_concept
 		icon = GFX_goal_anschluss
+		allow_branch = {
+			date > 1966.5.1
+		}
 		available = {
 			is_puppet = no
 			if = {
@@ -13884,7 +13752,9 @@ focus_tree = {
 				}
 			}
 		}
-		allow_branch = { has_dlc = "Man the Guns" }
+		allow_branch = {
+			date > 1966.5.1
+		}
 		x = 106
 		y = 0
 		offset = {
@@ -14247,8 +14117,7 @@ focus_tree = {
 			surrender_progress > 0.6
 		}
 		allow_branch = {
-			has_dlc = "La Resistance"
-			has_dlc = "Man the Guns"
+			date > 1966.5.1
 		}
 
 		x = 3
@@ -14634,7 +14503,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+		allow_branch = {
+			date > 1966.5.1
+		}
 		available = {
 			any_owned_state = {
 				NOT = { state = 85 }
@@ -14691,7 +14562,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+		allow_branch = {
+			date > 1966.5.1
+		}
 		available = {
 			owns_state = 85
 		}
@@ -15297,5 +15170,4 @@ focus_tree = {
 			#1x50% bonus to Naval Doctrine research
 		}
 	}
-
-}
+}	

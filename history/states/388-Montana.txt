@@ -5,7 +5,7 @@ state={
 	manpower = 537605
 	state_category = rural
 	resources={
-		tungsten=55 # was: 16
+		tungsten=11 # was: 16
 	}
 
 	history={
@@ -17,7 +17,12 @@ state={
 		victory_points = {
 			4860 1 
 		}
-
+		1936.1.1.13 = {
+			buildings = {
+				industrial_complex = 2
+			}
+			add_extra_state_shared_building_slots = 2
+		}
 	}
 
 	provinces={

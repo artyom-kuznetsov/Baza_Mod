@@ -27,6 +27,8 @@ if = {
 	}
 }
 
+give_guarantee = POL
+
 load_oob = "ENG_Motorized"
 
 set_research_slots = 4
@@ -107,8 +109,6 @@ if = {
 		has_dlc = "Man the Guns"
 	}
 	set_technology = {
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
 		early_ship_hull_light = 1
 		basic_ship_hull_light = 1
 		early_ship_hull_submarine = 1
@@ -155,7 +155,7 @@ add_ideas = {
 }
 	
 
-set_convoys = 800
+set_convoys = 1000
 
 # DIPLOMACY
 if = {
@@ -957,9 +957,6 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
 			fixed_ship_armor_slot = empty
-			mid_1_custom_slot = ship_mine_layer_1
-			mid_2_custom_slot = ship_mine_layer_1
-			rear_1_custom_slot = ship_mine_layer_1
 		}
 	}
 	create_equipment_variant = {

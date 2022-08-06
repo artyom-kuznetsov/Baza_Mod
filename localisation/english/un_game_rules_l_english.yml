@@ -1,0 +1,78 @@
+﻿l_russian:
+HMM_GROUPKEY:0 "Custom Lobby Rules"
+HMM_EQGROUP:0 "Technologies"
+HMM_SPYGROUP:0 "Spies and operations"
+UN_ABILITIES:0 "Special abilities"
+HMM_ALLOW_ADAPTABLE:0 "Fitter"
+HMM_ITA_GRIND:0 "Italo-Ethiopian War"
+HMM_BPS:0"Blueprintstealing"
+HMM_ALLOW_BRIDGES:0 "Homemade bridges"
+HMM_ALLOW_MINES:0 "Sea mines"
+HMM_IBPS:0 "Industrial theft of drawings"
+HMM_TBPS:0 "Technological theft"
+HMM_ALLOW_FIGHTER:0 "Fighters"
+HMM_ALLOW_STRATS:0 "Strategic bombers"
+HMM_ALLOW_NUKES:0 "Nuclear bombs"
+HMM_ALLOW_SUBS:0 "Submarines"
+HMM_FRA_VICHY:0 "Vichy France"
+HMM_GENERALGROUP:0 "Pregrinded Generals"
+HMM_ADAPTABLE_BARB:0 "Adaptable Barbarossa"
+HMM_SOV_MECH:0 "Mech Bonus for Soviet"
+HMM_ALLOW_DOZER:0 "Dozerblades"
+VICHY_NO_UN:0 "Vichy France will not be created."
+VICHY_YES_UN:0 "Vichy France will be available."
+
+###################################################
+###################################################
+###################################################
+
+UN_SOV_GRIND:0 "Soviet-Finnish War"
+INDUSTRIY_UN_G:0 "Industry"
+EQUIPMENT_CONVERSION_UN:0 "Improved equipment modification"
+
+###################################################
+###################################################
+###################################################
+
+UN_YES:0 "Allowed"
+UN_NO_DESC:0 "No changes"
+UN_NO:0 "Forbidden"
+UN_DELL:0 "Delete"
+UN_VANILLA:0 "Vanilla"
+UN_NO_CHANGES:0 "No changes"
+
+
+###################################################
+###################################################
+###################################################
+
+UN_PAGROUP:0 "Setting up advisors"
+POLITICAL_UN_1_ITA:0 "Workhorse (Italy)"
+
+###################################################
+###################################################
+###################################################
+
+UN_KB_ROMGROUP:0 "Design Bureau setup"
+KB_UN_1_ROM:0 ""Leonida" (Romania)"
+ROM_leonidas_works_vanil:0 "Tank KB "Leonid""
+KB_UN_1_ITA:0 "CRDA (Italy)"
+KB_UN_2_ITA:0 "The Shipyard of King Emmanuel (Italy)"
+UN_UK_FOCUS_ON:0 "Discount on fighter (Britain)"
+
+###################################################
+###################################################
+###################################################
+
+HMM_FOCUSGROUP:0 "Focus settings"
+UN_TECH_SLOT:0 "Research cell (Germany)"
+BISMARCK_CLASS_UN_UN:0 "Construction of Bismarck (Germany)"
+
+###################################################
+###################################################
+###################################################
+
+UN_ALLOW_ATTACK:0 "Forced attack"
+UN_ALLOW_STAND:0 "Forced defense"
+UN_ALLOW_PLAN:0 "Staff planning"
+UN_ALLOW_MAKESHIFT_BRIDGES:0 "Temporary bridges"

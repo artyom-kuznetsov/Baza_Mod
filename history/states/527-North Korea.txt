@@ -5,8 +5,8 @@ state={
 	manpower = 6774200
 	state_category = town
 	resources={
-		steel=90 # was: 30
-		tungsten=140 # was: 52
+		steel=18 # was: 30
+		tungsten=28 # was: 52
 	}
 
 	history={
@@ -20,7 +20,7 @@ state={
 			4052 1
 		}	
 
-		add_core_of = KOR
+		add_core_of = SWI # KOR
 	}
 
 	provinces={

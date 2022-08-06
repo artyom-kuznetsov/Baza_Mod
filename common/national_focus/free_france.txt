@@ -29,7 +29,7 @@
 			factor = 1
 		}
 		available = {
-			has_country_leader = { ruling_only = yes character = FRA_charles_de_gaulle}
+			has_country_leader = { ruling_only = yes name = "Charles de Gaulle"}
 		}
 		
 		bypass = {
@@ -163,7 +163,7 @@
 		completion_reward = {
 			unlock_decision_tooltip = { decision = FRA_prepare_coup_in_west_africa }
 			unlock_decision_tooltip = { decision = FRA_promise_independence_to_west_africa }
-			unlock_decision_tooltip = { decision = FRA_invasion_in_west_africa }
+			#unlock_decision_tooltip = { decision = FRA_invasion_in_west_africa }
 		}
 	}
 	focus = {
@@ -200,7 +200,7 @@
 		completion_reward = {
 			unlock_decision_tooltip = { decision = FRA_prepare_coup_in_syria }
 			unlock_decision_tooltip = { decision = FRA_promise_independence_to_syria }
-			unlock_decision_tooltip = { decision = FRA_invasion_in_syria }
+			#unlock_decision_tooltip = { decision = FRA_invasion_in_syria }
 		}
 	}
 	focus = {
@@ -237,7 +237,7 @@
 		completion_reward = {
 			unlock_decision_tooltip = { decision = FRA_prepare_coup_in_indochina }
 			unlock_decision_tooltip = { decision = FRA_promise_independence_to_indochina }
-			unlock_decision_tooltip = { decision = FRA_invasion_in_indochina }
+			#unlock_decision_tooltip = { decision = FRA_invasion_in_indochina }
 		}
 	}
 	focus = {
@@ -274,7 +274,7 @@
 		completion_reward = {
 			unlock_decision_tooltip = { decision = FRA_prepare_coup_in_central_africa }
 			unlock_decision_tooltip = { decision = FRA_promise_independence_to_central_africa }
-			unlock_decision_tooltip = { decision = FRA_invasion_in_central_africa }
+			#unlock_decision_tooltip = { decision = FRA_invasion_in_central_africa }
 		}
 	}
 	focus = {
@@ -356,9 +356,7 @@
 		}
 		
 		bypass = {
-			16 = {
-				is_controlled_by = ROOT
-			}
+
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -662,7 +660,7 @@
 				limit = {
 					is_core_of = ROOT
 					not = { is_controlled_by = ROOT }
-					infrastructure < 3
+					infrastructure < 7
 				}
 				add_resistance_target = {
 					amount = 10

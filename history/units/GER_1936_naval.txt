@@ -87,7 +87,7 @@ instant_effect = {
 			creator = "GER" 
 		}
 		requested_factories = 1
-		progress = 0.75
+		progress = 0.99
 		amount = 2
 	}
 	add_equipment_production = {
@@ -96,7 +96,7 @@ instant_effect = {
 			creator = "GER" 
 		}
 		requested_factories = 1
-		progress = 0.65
+		progress = 0.99
 		amount = 2
 	}
 	add_equipment_production = {
@@ -105,7 +105,7 @@ instant_effect = {
 			creator = "GER" 
 		}
 		requested_factories = 1
-		progress = 0.55
+		progress = 0.99
 		amount = 2
 	}
 	add_equipment_production = {
@@ -114,7 +114,7 @@ instant_effect = {
 			creator = "GER" 
 		}
 		requested_factories = 1
-		progress = 0.45
+		progress = 0.99
 		amount = 2
 	}
 	# DD: 1934 class (x4) ("Z1" "Z2" "Z3" "Z4")
@@ -124,7 +124,7 @@ instant_effect = {
 			creator = "GER"
 		}
 		requested_factories = 1
-		progress = 0.75
+		progress = 0.99
 		amount = 2
 	}
 	add_equipment_production = {
@@ -133,7 +133,7 @@ instant_effect = {
 			creator = "GER"
 		}
 		requested_factories = 1
-		progress = 0.65
+		progress = 0.99
 		amount = 2
 	}
 	# CA: "Graf Spee"
@@ -144,7 +144,7 @@ instant_effect = {
 			version_name = "Deutschland Class"
 		}
 		requested_factories = 1
-		progress = 0.95
+		progress = 0.99
 		amount = 1
 	}
 	# Scharnhorst
@@ -154,7 +154,7 @@ instant_effect = {
 			creator = "GER"
 		}
 		requested_factories = 1
-		progress = 0.25
+		progress = 0.99
 		amount = 1
 	}
 	# Gneisenau
@@ -164,7 +164,7 @@ instant_effect = {
 			creator = "GER"
 		}
 		requested_factories = 1
-		progress = 0.1
+		progress = 0.99
 		amount = 1
 	}
 }

@@ -21,8 +21,8 @@ equipments = {
 
 		build_cost_ic = 4
 		resources = {
-			aluminium = 5
-			steel = 10
+			aluminium = 1
+			steel = 2
 		}
 	}
 

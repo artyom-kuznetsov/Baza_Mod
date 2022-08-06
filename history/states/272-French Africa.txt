@@ -4,14 +4,14 @@ state={
 	name="STATE_272"
 	manpower = 1638000
 	resources={
-		steel=15 # was: 4
+		steel=3 # was: 4
 	}
 	
 	state_category = pastoral
 
 	history={
 		owner = FRA
-		add_core_of = SEN
+		add_core_of = SWI
 		victory_points = {
 			4948 5 
 		}

@@ -1,0 +1,136 @@
+# Triggers for Lobby Rules
+
+are_mines_enabled = {
+  has_dlc = "Man the Guns"
+  has_game_rule = {
+    rule = HMM_ALLOW_MINES
+    option = HMM_MINES_FREE
+  }
+}
+
+are_f3s_enabled = {
+	has_game_rule = {
+		rule = HMM_ALLOW_FIGHTER
+		option = HMM_FREE_FIGHTER3
+	}
+}
+
+are_strats_enabled = {
+	OR = {
+		has_game_rule = {
+			rule = HMM_ALLOW_STRATS
+			option = HMM_FREE_STRATS
+		}
+		has_game_rule = {
+			rule = HMM_ALLOW_STRATS
+			option = HMM_STRAT_1s
+		}
+		has_game_rule = {
+			rule = HMM_ALLOW_STRATS
+			option = HMM_STRAT_2s
+		}
+	}
+}
+
+are_strat2_enabled = {
+	OR = {
+		has_game_rule = {
+			rule = HMM_ALLOW_STRATS
+			option = HMM_FREE_STRATS
+		}
+		has_game_rule = {
+			rule = HMM_ALLOW_STRATS
+			option = HMM_STRAT_2s
+		}
+	}	
+}
+
+are_strat3_enabled = {
+	has_game_rule = {
+		rule = HMM_ALLOW_STRATS
+		option = HMM_FREE_STRATS
+	}
+	NOT = {
+		has_game_rule = {
+			rule = HMM_ALLOW_STRATS
+			option = HMM_STRAT_2s
+		}	
+	}
+}
+
+are_subs3_enabled = {
+	NOT = {
+		has_game_rule = {
+			rule = HMM_ALLOW_SUBS
+			option = HMM_SUBS3_BANNED
+		}		
+	}	
+}	
+
+are_subs4_enabled = {
+	has_game_rule = {
+		rule = HMM_ALLOW_SUBS
+		option = HMM_FREE_SUBS
+	}
+}
+
+is_ibps_enabled = {
+	has_game_rule = {
+		rule = HMM_IBPS
+		option = HMM_IBPS_VANILLA
+	}
+}
+
+is_tbps_100_enabled = 	{
+	has_game_rule = {
+		rule = HMM_TBPS
+		option = HMM_TBPS_VANILLA
+	}	
+}
+# end of swap
+are_nukes_enabled = {
+	has_game_rule = {
+		rule   = HMM_ALLOW_NUKES
+		option = HMM_FREE_NUKES
+	}
+}
+
+is_tech_stealing_banned = {
+	has_game_rule = {
+		rule   = HMM_TBPS
+		option = HMM_TBPS_BANNED
+	}
+}
+################# abilities #################
+are_force_attack_enabled = {
+	NOT = {
+		has_game_rule = {
+			rule = UN_ALLOW_ATTACK
+			option = UN_ATTACK_BANNED
+		}
+	}	
+}
+are_last_stand = {
+	NOT = {
+		has_game_rule = {
+			rule = UN_ALLOW_STAND
+			option = UN_STAND_BANNED
+		}
+	}	
+}
+are_force_plan = {
+	NOT = {
+		has_game_rule = {
+			rule = UN_ALLOW_PLAN
+			option = UN_PLAN_BANNED
+		}
+	}	
+}
+are_makeshift_bridges = {
+	NOT = {
+		has_game_rule = {
+			rule = UN_ALLOW_MAKESHIFT_BRIDGES
+			option = UN_BRIDGES_BANNED
+		}
+	}	
+}

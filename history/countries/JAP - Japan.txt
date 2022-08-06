@@ -136,8 +136,6 @@ if = {
 		has_dlc = "Man the Guns"
 	}
 	set_technology = {
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
 		basic_torpedo = 1
 		basic_battery = 1
 		basic_light_battery = 1
@@ -464,9 +462,8 @@ recruit_character = JAP_mitsumasa_yonai
 recruit_character = JAP_takuo_godo
 recruit_character = JAP_chiune_sugihara
 recruit_character = JAP_kingoro_hashimoto
-recruit_character = JAP_sanzo_nosaka
 recruit_character = JAP_hiroshi_oshima
-recruit_character = JAP_kijuro_shidehara
+recruit_character = JAP_yosuke_matsuoka
 
 
 if = {
@@ -943,7 +940,6 @@ if = {
 				fixed_ship_armor_slot = ship_armor_cruiser_1
 				mid_1_custom_slot = ship_torpedo_1
 				mid_2_custom_slot = empty
-				rear_1_custom_slot = ship_mine_layer_1
 			}
 			obsolete = yes
 		}
@@ -961,7 +957,6 @@ if = {
 				fixed_ship_armor_slot = ship_armor_cruiser_1
 				mid_1_custom_slot = ship_torpedo_1
 				mid_2_custom_slot = ship_airplane_launcher_1
-				rear_1_custom_slot = ship_mine_layer_1
 			}
 			obsolete = yes
 		}
@@ -979,7 +974,6 @@ if = {
 				fixed_ship_armor_slot = ship_armor_cruiser_1
 				mid_1_custom_slot = ship_torpedo_1
 				mid_2_custom_slot = empty
-				rear_1_custom_slot = ship_mine_layer_1
 			}
 			obsolete = yes
 		}
@@ -997,7 +991,6 @@ if = {
 				fixed_ship_armor_slot = ship_armor_cruiser_1
 				mid_1_custom_slot = ship_light_medium_battery_1
 				mid_2_custom_slot = ship_torpedo_1
-				rear_1_custom_slot = ship_mine_layer_1
 			}
 		}
 		create_equipment_variant = {
@@ -1014,7 +1007,6 @@ if = {
 				fixed_ship_armor_slot = empty
 				mid_1_custom_slot = empty
 				mid_2_custom_slot = empty
-				rear_1_custom_slot = ship_mine_layer_1
 			}
 		}
 		### Destroyer Variants

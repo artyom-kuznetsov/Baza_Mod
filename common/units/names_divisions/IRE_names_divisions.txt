@@ -339,4 +339,3 @@ IRE_GAR_01 =
 		22 = { "%dnd Irish Infantry Division" }
 	}
 }
-
