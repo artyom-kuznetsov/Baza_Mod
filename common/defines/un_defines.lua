@@ -87,3 +87,15 @@ NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 10000000;
 NDefines.NDeployment.BASE_DEPLOYMENT_TRAINING = 0.75;
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0
 NDefines.NMilitary.TRAINING_ATTRITION = 0
+
+NDefines.NMilitary.UNIT_LEADER_INITIAL_TRAIT_SLOT = { 				-- trait slot for 0 level leader
+		2.0, -- field marshal
+		2.0, -- corps commander
+		2.0  -- navy general
+	} 
+NDefines.NMilitary.UNIT_LEADER_TRAIT_SLOT_PER_LEVEL = { 			-- num extra traits on each level
+		1.0, -- field marshal
+		1.0, -- corps commander
+		1.0  -- navy general
+	}
+NDefines.NCountry.BASE_MAX_COMMAND_POWER = 500.0					-- base value for maximum command power
