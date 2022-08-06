@@ -52,7 +52,7 @@ tank_steel_tracks_2 = {
 
 		}
 		build_cost_resources = {
-			steel = 1
+			steel = 2
 		}
 	}
 
@@ -70,7 +70,7 @@ tank_steel_tracks_3 = {
 
 		}
 		build_cost_resources = {
-			steel = 1
+			steel = 2
 		}
 	}
 
@@ -102,7 +102,7 @@ tank_rubber_tracks_2 = {
 			maximum_speed = 0.15
 		}
 		build_cost_resources = {
-			rubber = 1
+			rubber = 2
 		}
 	}
 
@@ -117,7 +117,7 @@ tank_rubber_tracks_3 = {
 			maximum_speed = 0.2
 		}
 		build_cost_resources = {
-			rubber = 1
+			rubber = 2
 		}
 	}
 
@@ -1080,6 +1080,9 @@ tank_padded_tracks_3 = {
 			module_category = tank_small_main_armament
 			convert_cost_ic = 2
 		}
+		build_cost_resources = {
+			steel = 2
+		}
 	}
 
 	tank_auto_cannon_2 = {
@@ -1098,6 +1101,9 @@ tank_padded_tracks_3 = {
 		can_convert_from = {
 			module_category = tank_small_main_armament
 			convert_cost_ic = 2.5
+		}
+		build_cost_resources = {
+			steel = 3
 		}
 	}
 
@@ -1119,6 +1125,9 @@ tank_padded_tracks_3 = {
 		can_convert_from = {
 			module_category = tank_small_main_armament
 			convert_cost_ic = 3
+		}
+		build_cost_resources = {
+			steel = 3
 		}
 	}
 
@@ -1143,7 +1152,7 @@ tank_padded_tracks_3 = {
 		}
 		build_cost_resources = {
 			tungsten = 1
-			steel = 2
+			steel = 4
 		}
 	}
 
@@ -1169,7 +1178,7 @@ tank_padded_tracks_3 = {
 		build_cost_resources = {
 			tungsten = 1
 			#chromium = 1
-			steel = 3
+			steel = 5
 		}
 	}
 
@@ -1190,6 +1199,9 @@ tank_padded_tracks_3 = {
 			module_category = tank_small_main_armament
 			convert_cost_ic = 2
 		}
+		build_cost_resources = {
+			steel = 2
+		}
 	}
 
 	tank_small_cannon_2 = {
@@ -1208,6 +1220,9 @@ tank_padded_tracks_3 = {
 		can_convert_from = {
 			module_category = tank_small_main_armament
 			convert_cost_ic = 4
+		}
+		build_cost_resources = {
+			steel = 3
 		}
 	}
 
@@ -1231,7 +1246,7 @@ tank_padded_tracks_3 = {
 		build_cost_resources = {
 			#tungsten = 1
 			#chromium = 1
-			steel = 1
+			steel = 3
 		}
 	}
 
@@ -1257,7 +1272,7 @@ tank_padded_tracks_3 = {
 
 		build_cost_resources = {
 			tungsten = 1
-			steel = 1
+			steel = 3
 		}
 	}
 
@@ -1282,7 +1297,7 @@ tank_padded_tracks_3 = {
 		}
 		build_cost_resources = {
 			tungsten = 1
-			steel = 2
+			steel = 4
 			chromium = 1
 		}
 	}
@@ -1308,7 +1323,7 @@ tank_padded_tracks_3 = {
 		}
 		build_cost_resources = {
 			tungsten = 1
-			steel = 2
+			steel = 6
 		}
 	}
 
@@ -1333,7 +1348,7 @@ tank_padded_tracks_3 = {
 		}
 		build_cost_resources = {
 			tungsten = 1
-			steel = 3
+			steel = 6
 			chromium = 1
 		}
 	}
@@ -1359,7 +1374,7 @@ tank_padded_tracks_3 = {
 		}
 		build_cost_resources = {
 			tungsten = 2
-			steel = 1
+			steel = 6
 			#chromium = 1
 		}
 	}
@@ -1385,7 +1400,7 @@ tank_padded_tracks_3 = {
 		}
 		build_cost_resources = {
 			tungsten = 2
-			steel = 2
+			steel = 8
 			#chromium = 1
 		}
 	}
@@ -1410,7 +1425,7 @@ tank_padded_tracks_3 = {
 		}
 		build_cost_resources = {
 			tungsten = 2
-			steel = 2
+			steel = 5
 		}
 	}
 
@@ -1435,7 +1450,7 @@ tank_padded_tracks_3 = {
 		build_cost_resources = {
 			tungsten = 2
 			chromium = 1
-			steel = 2
+			steel = 4
 		}
 	}
 	tank_high_velocity_cannon_3 = {
@@ -1484,7 +1499,7 @@ tank_padded_tracks_3 = {
 		build_cost_resources = {
 			tungsten = 1
 			chromium = 1
-			steel = 2
+			steel = 8
 		}
 	}
 
@@ -1509,7 +1524,7 @@ tank_padded_tracks_3 = {
 		build_cost_resources = {
 			tungsten = 2
 			chromium = 1
-			steel = 2
+			steel = 9
 		}
 	}
 
@@ -1534,7 +1549,7 @@ tank_padded_tracks_3 = {
 		build_cost_resources = {
 			tungsten = 3
 			chromium = 1
-			steel = 3
+			steel = 10
 		}
 	}
 
@@ -1560,7 +1575,7 @@ tank_padded_tracks_3 = {
 		build_cost_resources = {
 			tungsten = 1
 			chromium = 1
-			steel = 3
+			steel = 9
 		}
 	}
 
@@ -1579,8 +1594,9 @@ tank_padded_tracks_3 = {
 			reliability = -0.35
 		}
 		build_cost_resources = {
-			tungsten = 5
+			tungsten = 3
 			chromium = 2
+			steel = 5
 		}
 	}
 
@@ -1792,6 +1808,9 @@ tank_padded_tracks_3 = {
 		multiply_stats = {
 		}
 		xp_cost = 1
+		build_cost_resources = {
+			steel = 1
+		}
 	}
 
 	dozer_blade = {

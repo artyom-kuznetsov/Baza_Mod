@@ -76,6 +76,9 @@ equipment_modules = {
 			maximum_speed = 0.2
 			armor_value = -0.1
 		}
+		build_cost_resources = {
+			rubber = 3
+		}
 	}
 
 	car_6x6_suspension = {
@@ -93,6 +96,9 @@ equipment_modules = {
 			soft_attack = 0.1
 			reliability = 0.05
 			maximum_speed = 0.1
+		}
+		build_cost_resources = {
+			rubber = 4
 		}
 	}
 
@@ -114,7 +120,7 @@ equipment_modules = {
 			ap_attack = 0.15
 		}
 		build_cost_resources = {
-			rubber = 1
+			rubber = 6
 		}
 	}
 	###Hull Mod ### Shell type
