@@ -204,7 +204,7 @@ equipments = {
 		hardness 	= 0.7
 		resources = {
 			steel = 9
-			rubber = 1
+			rubber = 5
 		}
 		upgrades = {
 			tank_nsb_engine_upgrade

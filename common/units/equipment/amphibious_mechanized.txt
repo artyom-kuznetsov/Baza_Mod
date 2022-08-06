@@ -34,7 +34,7 @@ equipments = {
 		build_cost_ic = 8
 		resources = {
 			steel = 9
-			rubber = 1
+			rubber = 4
 		}
 		
 		fuel_consumption = 4.0
@@ -72,7 +72,7 @@ equipments = {
 		build_cost_ic = 10
 		resources = {
 			steel = 12
-			rubber = 1
+			rubber = 5
 		}
 	}
 }
