@@ -89,14 +89,14 @@ NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0
 NDefines.NMilitary.TRAINING_ATTRITION = 0
 
 NDefines.NMilitary.UNIT_LEADER_INITIAL_TRAIT_SLOT = { 				-- trait slot for 0 level leader
+		3.0, -- field marshal
+		3.0, -- corps commander
+		3.0  -- navy general
+	} 
+NDefines.NMilitary.UNIT_LEADER_TRAIT_SLOT_PER_LEVEL = { 			-- num extra traits on each level
 		2.0, -- field marshal
 		2.0, -- corps commander
 		2.0  -- navy general
-	} 
-NDefines.NMilitary.UNIT_LEADER_TRAIT_SLOT_PER_LEVEL = { 			-- num extra traits on each level
-		1.0, -- field marshal
-		1.0, -- corps commander
-		1.0  -- navy general
 	}
 NDefines.NCountry.BASE_MAX_COMMAND_POWER = 400.0					-- base value for maximum command power
 NDefines.NBuildings.MAX_SHARED_SLOTS = 49
