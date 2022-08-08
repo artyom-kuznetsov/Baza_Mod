@@ -6,11 +6,11 @@ state={
 	
 	state_category = pastoral
 	resources={
-		rubber=5 # was: 1
+		rubber=1 # was: 1
 	}
 	history={
 		owner = FRA
-		add_core_of = SWI # RCG
+		add_core_of = SWE # RCG
 		victory_points = {
 			8193 2
 		}

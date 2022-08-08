@@ -25,7 +25,7 @@ state={
 		victory_points = {
 			1065 1 
 		}
-		add_core_of = SWI # ISR
+		add_core_of = SWE # ISR
 	}
 
 	provinces={

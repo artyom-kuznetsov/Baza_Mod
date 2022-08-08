@@ -19,7 +19,7 @@ state={
 				naval_base = 6
 			}
 		}
-		add_core_of = SWI # LBA
+		add_core_of = SWE # LBA
 	}
 
 	provinces={

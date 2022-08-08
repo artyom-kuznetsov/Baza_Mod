@@ -6,7 +6,7 @@ state={
 	state_category = pastoral
 
 	history={
-		add_core_of = SWI # QAT
+		add_core_of = SWE # QAT
 		owner = ENG
 		victory_points = {
 			8051 1

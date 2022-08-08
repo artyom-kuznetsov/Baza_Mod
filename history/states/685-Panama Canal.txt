@@ -17,7 +17,7 @@ state={
 				naval_base = 3
 			}
 		}
-		add_core_of = SWI # PAN
+		add_core_of = SWE # PAN
 	}
 	
 	provinces={ 7617 }

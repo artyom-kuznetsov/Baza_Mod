@@ -6,7 +6,7 @@ state={
 
 	history={
 		owner = USA
-		add_core_of = SWI # HAW
+		add_core_of = SWE # HAW
 		buildings = {
 			infrastructure = 1
 			13048 = {

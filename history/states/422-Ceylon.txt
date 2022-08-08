@@ -7,11 +7,11 @@ state=
 	state_category = rural
 
 	resources={
-		rubber=300 # was: 116
+		rubber=60 # was: 116
 	}
 
 	history={
-		add_core_of = SWI # SRL
+		add_core_of = SWE # SRL
 		owner = ENG
 		victory_points = {
 			10201 3 

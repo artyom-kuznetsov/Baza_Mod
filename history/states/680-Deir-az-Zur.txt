@@ -19,7 +19,7 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = SWI # SYR
+		add_core_of = SWE # SYR
 	}
 
 

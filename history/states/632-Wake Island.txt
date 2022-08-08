@@ -7,7 +7,7 @@ state={
 
 	history={
 		owner = USA
-		add_core_of = SWI # GUM
+		add_core_of = SWE # GUM
 		buildings = {
 			infrastructure = 2
 			13047 = {

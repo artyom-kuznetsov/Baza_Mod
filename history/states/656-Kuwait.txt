@@ -6,7 +6,7 @@ state={
 	state_category = rural
 	
 	history={
-		add_core_of = SWI # KUW
+		add_core_of = SWE # KUW
 		owner = ENG
 		victory_points = {
 			8085 1 

@@ -6,12 +6,12 @@ state={
 	state_category = wasteland
 	
 	resources={
-		steel=130 # was: 36
+		steel=26 # was: 36
 	}
 
 	history={
 		owner = FRA
-		add_core_of = SWI # ALG
+		add_core_of = SWE # ALG
 
 		victory_points = {
 			1145 5 

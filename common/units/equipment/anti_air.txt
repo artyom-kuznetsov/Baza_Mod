@@ -33,7 +33,7 @@ equipments = {
 		
 		build_cost_ic = 4
 		resources = {
-			steel = 10
+			steel = 2
 		}
 
 		
@@ -62,7 +62,7 @@ equipments = {
 
 		build_cost_ic = 5
 		resources = {
-			steel = 12
+			steel = 2
 		}
 	}
 	
@@ -81,7 +81,7 @@ equipments = {
 
 		build_cost_ic = 6
 		resources = {
-			steel = 15
+			steel = 3
 		}
 	}
 }

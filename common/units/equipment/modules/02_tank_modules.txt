@@ -192,7 +192,7 @@ equipment_modules = {
 			maximum_speed = -0.2
 		}
 		build_cost_resources = {
-			steel = 5
+			steel = 1
 		}
 	}
 
@@ -210,7 +210,7 @@ equipment_modules = {
 			maximum_speed = -0.2
 		}
 		build_cost_resources = {
-			steel = 5
+			steel = 1
 		}
 	}
 
@@ -226,7 +226,7 @@ equipment_modules = {
 		multiply_stats =  {
 		}
 		build_cost_resources = {
-			steel = 5
+			steel = 1
 		}
 	}
 

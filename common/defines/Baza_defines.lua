@@ -98,4 +98,6 @@ NDefines.NMilitary.UNIT_LEADER_TRAIT_SLOT_PER_LEVEL = { 			-- num extra traits o
 		1.0, -- corps commander
 		1.0  -- navy general
 	}
-NDefines.NCountry.BASE_MAX_COMMAND_POWER = 500.0					-- base value for maximum command power
+NDefines.NCountry.BASE_MAX_COMMAND_POWER = 400.0					-- base value for maximum command power
+NDefines.NBuildings.MAX_SHARED_SLOTS = 49
+NDefines.NAir.AIR_WING_MAX_SIZE = 200

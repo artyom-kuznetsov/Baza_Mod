@@ -200,7 +200,7 @@ equipments = {
 		hardness = 0.8
 		armor_value = 5
 		resources = {
-			steel = 3
+			steel = 1
 		}
 
 		manpower = 2
@@ -235,9 +235,6 @@ equipments = {
 		build_cost_ic = 1
 		reliability = 0.95
 		armor_value = 10
-		resources = {
-			steel = 4
-		}
 	}
 
 	light_tank_chassis_2 = {
@@ -254,7 +251,7 @@ equipments = {
 		reliability = 1.1
 		armor_value = 15
 		resources = {
-			steel = 5
+			steel = 1
 		}
 	}
 
@@ -272,7 +269,7 @@ equipments = {
 		reliability = 1.3
 		armor_value = 20
 		resources = {
-			steel = 6
+			steel = 2
 		}
 	}
 
@@ -466,7 +463,7 @@ equipments = {
 		armor_value = 15
 		hardness = 0.85
 		resources = {
-			steel = 5
+			steel = 1
 		}
 
 		manpower = 2
@@ -489,7 +486,7 @@ equipments = {
 		reliability = 0.75
 		armor_value = 25
 		resources = {
-			steel = 5
+			steel = 1
 		}
 	}
 
@@ -504,9 +501,6 @@ equipments = {
 		module_slots = inherit
 		armor_value = 35
 		build_cost_ic = 2
-		resources = {
-			steel = 7
-		}
 	}
 	medium_tank_chassis_2 = {
 		abbreviation = "mt2"
@@ -522,7 +516,7 @@ equipments = {
 		reliability = 1.3
 		armor_value = 45
 		resources = {
-			steel = 8
+			steel = 1
 		}
 	}
 	medium_tank_chassis_3 = {
@@ -539,7 +533,7 @@ equipments = {
 		reliability = 1.6
 		armor_value = 50
 		resources = {
-			steel = 10
+			steel = 2
 		}
 	}
 
@@ -739,7 +733,7 @@ equipments = {
 		armor_value = 25
 		hardness = 0.95
 		resources = {
-			steel = 7
+			steel = 1
 		}
 
 		manpower = 2
@@ -774,9 +768,6 @@ equipments = {
 		priority = 2000
 		module_slots = inherit
 		armor_value = 35
-		resources = {
-			steel = 8
-		}
 	}
 
 	heavy_tank_chassis_2 = {
@@ -793,7 +784,7 @@ equipments = {
 		reliability = 1.15
 		armor_value = 55
 		resources = {
-			steel = 10
+			steel = 1
 			chromium = 1
 		}
 	}
@@ -812,7 +803,7 @@ equipments = {
 		reliability = 1.3
 		armor_value = 75
 		resources = {
-			steel = 12
+			steel = 2
 			chromium = 1
 		}
 	}
@@ -1009,7 +1000,7 @@ equipments = {
 		armor_value = 75
 		hardness = 0.95
 		resources = {
-			steel = 10
+			steel = 2
 			chromium = 1
 		}
 
@@ -1227,7 +1218,7 @@ equipments = {
 		armor_value = 85
 		hardness = 1
 		resources = {
-			steel = 15
+			steel = 3
 			chromium = 2
 		}
 

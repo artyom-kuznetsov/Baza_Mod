@@ -19,7 +19,7 @@ state={
 			11976 1 
 		}
 
-		add_core_of = SWI # JOR
+		add_core_of = SWE # JOR
 	}
 
 	provinces={

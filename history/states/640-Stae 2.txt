@@ -9,7 +9,7 @@ state={
 		tungsten = 120 
 	}
 	history={
-		add_core_of = SWI # BRM
+		add_core_of = SWE # BRM
 		owner = RAJ
 		buildings = {
 			infrastructure = 2
