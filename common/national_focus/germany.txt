@@ -1390,7 +1390,7 @@ focus_tree = {
         	modify_building_resources = {
         	   building = synthetic_refinery
         	   resource = rubber
-        	   amount = 10
+        	   amount = 2
         	}
 		}
 	}
