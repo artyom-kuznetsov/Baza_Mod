@@ -855,7 +855,7 @@
 				}
 				add_resource = {
 					type = steel
-					amount = 10
+					amount = 2
 				}
 			}
 			random_owned_controlled_state = {
@@ -865,7 +865,7 @@
 				}
 				add_resource = {
 					type = steel
-					amount = 10
+					amount = 2
 				}
 			}
 			random_owned_controlled_state = {
@@ -875,7 +875,7 @@
 				}
 				add_resource = {
 					type = chromium
-					amount = 15
+					amount = 3
 				}
 			}
 		}

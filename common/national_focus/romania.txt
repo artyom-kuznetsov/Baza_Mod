@@ -795,7 +795,7 @@
 				}
 				add_resource = {
 					type = steel
-					amount = 40
+					amount = 8
 				}
 			}
 		}
@@ -820,7 +820,7 @@
 				set_state_flag = ROM_hunedoara_steel_works_IC
 				add_resource = {
 					type = steel
-					amount = 115
+					amount = 23
 				}
 			}
 		}

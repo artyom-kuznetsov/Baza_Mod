@@ -1536,7 +1536,7 @@ focus_tree = {
 			7 = {
 				add_resource = {
 					type = steel
-					amount = 80
+					amount = 16
 				}
 				if = {
 					limit = {

@@ -2196,7 +2196,7 @@ shared_focus = {
 			190 = {
 				add_resource = {
 					type = steel
-					amount = 80
+					amount = 16
 				}
 			}
 		}
@@ -2292,7 +2292,7 @@ shared_focus = {
 			190 = {
 				add_resource = {
 					type = steel
-					amount = 40
+					amount = 8
 				}
 			}
 		}

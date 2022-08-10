@@ -4211,7 +4211,7 @@
 					}
 					add_resource = {
 						type = steel
-						amount = 80
+						amount = 16
 					}				
 				}
 				add_extra_state_shared_building_slots = 2

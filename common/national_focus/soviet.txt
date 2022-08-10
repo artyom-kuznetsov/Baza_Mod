@@ -722,7 +722,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = steel
-					amount = 25
+					amount = 5
 				}
 				set_state_flag = SOV_steel_casting_industry_flag
 			}
@@ -762,7 +762,7 @@ focus_tree = {
 					}
 					add_resource = {
 						type = steel
-						amount = 25
+						amount = 5
 					}
 					set_state_flag = SOV_steel_casting_industry_flag
 				}
